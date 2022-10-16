@@ -1,0 +1,21 @@
+body{
+    background: red;
+    color: black;
+
+}
+
+h1{
+    margin: 0px;
+    text-align: center;
+}
+nav li{
+    padding: 5px 30px;
+    display:inline-block;
+    
+}
+nav a{
+    padding: 20px 100px;
+    display: inline-block;
+    color: yellow;
+    text-decoration: none;
+}
