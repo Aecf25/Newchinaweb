@@ -1,11 +1,12 @@
 body{
-    background: red;
+    
     color: black;
+    
 
 }
 
 h1{
-    margin: 0px;
+    margin: 0;
     text-align: center;
 }
 nav li{
@@ -18,4 +19,13 @@ nav a{
     display: inline-block;
     color: yellow;
     text-decoration: none;
+}
+div p{
+    height: 100px;
+}
+
+header, body, nav{
+    display: block;
+    background-image: url(http://drive.google.com/uc?export=view&id=1AwoggbSMJbDyrrUehQJaGE9vJW0oBL4X);
+    background-size: cover;
 }
