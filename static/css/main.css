@@ -1,31 +1,401 @@
-body{
-    
-    color: black;
-    
 
+body, html{
+    height: 100%;
+    width: 100%;
 }
-
 h1{
     margin: 0;
     text-align: center;
 }
-nav li{
-    padding: 5px 30px;
-    display:inline-block;
+header{
+    width: 100%;
+}
+header .navbar-brand{
+    -webkit-text-stroke: 2px gray;
+    text-align: center;
+    font-family: haettenschweiler;
+    
+    padding-right: 10%;
+    
+} 
+header .desktop2 nav div div ul li a, header .desktop2 nav div div ul li{
+    
+    -webkit-text-stroke: 1px rgb(211, 211, 253);
+    width:100%;
+    padding-right: 15%;
+    display: inline-block;
+    text-decoration: none;
+    list-style: none;
+    
     
 }
-nav a{
-    padding: 20px 100px;
+
+header .desktop3 nav div div ul li a, header .desktop3 nav div div ul li{
+    
+    -webkit-text-stroke: 1px rgb(211, 211, 253);
+    padding-right: 25%;
     display: inline-block;
-    color: yellow;
+    text-decoration: none;
+    list-style: none;
+    
+    
+}
+
+header .desktop4 nav div div ul li a, header .desktop4 nav div div ul li{
+    
+    -webkit-text-stroke: 1px rgb(211, 211, 253);
+    padding-right: 30%;
+    display: inline-block;
+    text-decoration: none;
+    list-style: none;
+    
+    
+}
+
+header .desktop5 nav div div ul li a, header .desktop5 nav div div ul li{
+    
+    -webkit-text-stroke: 1px rgb(211, 211, 253);
+    width: 100%;
+    padding-right: 40%;
+    display: inline-block;
+    text-decoration: none;
+    list-style: none;
+    
+    
+}
+
+header .desktop6 nav div div ul li a, header .desktop6 nav div div ul li{
+    
+    -webkit-text-stroke: 1px rgb(211, 211, 253);
+    width: 100%;
+    padding-right: 50%;
+    display: inline-block;
+    text-decoration: none;
+    list-style: none;
+    
+    
+}
+
+.d-flex{
+    padding-left: 10%;
+    width: 40%
+}
+.d-flex input{
+    width: 100%;
+    font-size: 100%;
+}
+.d-flex button{
+    width: 60%;
+    font-size: 100%;
+}
+
+.phone nav li, .tabletv1 nav li, .tablet nav li, .desktop nav li{
+    font-size: 3vh;
+    margin-right: 10vh;
+    display: inline-block;
+    list-style: none;
     text-decoration: none;
 }
-div p{
-    height: 100px;
+
+.phone h5, .tablet h5, .desktop h5, .desktop2 h5, .desktop3 h5, .desktop4 h5, .desktop5 h5, .desktop6 h5{
+    -webkit-text-stroke: 1px rgb(252, 82, 82);
+}
+
+/* Telefonos */
+@media (max-width: 600px){
+    .desktop{
+        display: none;
+    }
+    .tabletv1{
+        display: none;
+    }
+    .tablet{
+        display: none;
+    }
+    .desktop2{
+        display: none;
+    }
+    .desktop3{
+        display: none;
+    }
+    .desktop4{
+        display: none;
+    }
+    .desktop5{
+        display: none;
+    }
+    .desktop6{
+        display: none;
+    }
+}
+
+/* Tabletas v1 */
+@media (min-width: 601px) and (max-width: 719px) {
+    .desktop{
+        display: none;
+    }
+    .tablet{
+        display: none;
+    }
+    .phone{
+        display: none;
+    }
+    .desktop2{
+        display: none;
+    }
+    .desktop3{
+        display: none;
+    }
+    .desktop4{
+        display: none;
+    }
+    .desktop5{
+        display: none;
+    }
+    .desktop6{
+        display: none;
+    }
+}
+/* Tabletas v2 */
+@media (min-width: 720px) and (max-width: 799px) {
+    .desktop{
+        display: none;
+    }
+    .phone{
+        display: none;
+    }
+    .tabletv1{
+        display: none;
+    }
+    .desktop2{
+        display: none;
+    }
+    .desktop3{
+        display: none;
+    }
+    .desktop4{
+        display: none;
+    }
+    .desktop5{
+        display: none;
+    }
+    .desktop6{
+        display: none;
+    }
+}
+
+/* Monitores low */
+@media (min-width: 800px) and (max-width: 999px) {
+    .phone{
+        display: none;
+    }
+    .tablet{
+        display: none;
+    }
+    .tabletv1{
+        display: none;
+    }
+    .desktop2{
+        display: none;
+    }
+    .desktop3{
+        display: none;
+    }
+    .desktop4{
+        display: none;
+    }
+    .desktop5{
+        display: none;
+    }
+    .desktop6{
+        display: none;
+    }
+}
+
+/* Monitores media-low */
+@media (min-width: 1000px) and (max-width: 1199px) {
+    .desktop{
+        display: none;
+    }
+    .tablet{
+        display: none;
+    }
+    .tabletv1{
+        display: none;
+    }
+    .phone{
+        display: none;
+    }
+    .desktop3{
+        display: none;
+    }
+    .desktop4{
+        display: none;
+    }
+    .desktop5{
+        display: none;
+    }
+    .desktop6{
+        display: none;
+    }
+}
+
+/* Monitores medios y televisores lcd */
+@media (min-width: 1200px) and (max-width: 1366px) {
+    .desktop{
+        display: none;
+    }
+    .tablet{
+        display: none;
+    }
+    .tabletv1{
+        display: none;
+    }
+    .desktop2{
+        display: none;
+    }
+    .phone{
+        display: none;
+    }
+    .desktop4{
+        display: none;
+    }
+    .desktop5{
+        display: none;
+    }
+    .desktop6{
+        display: none;
+    }
+}
+
+/* Monitores hd */
+@media (min-width: 1367px) and (max-width: 1560px) {
+    .desktop{
+        display: none;
+    }
+    .tablet{
+        display: none;
+    }
+    .tabletv1{
+        display: none;
+    }
+    .desktop2{
+        display: none;
+    }
+    .desktop3{
+        display: none;
+    }
+    .phone{
+        display: none;
+    }
+    .desktop5{
+        display: none;
+    }
+    .desktop6{
+        display: none;
+    }
+}
+
+/* Monitores full-HD media */
+@media (min-width: 1561px) and (max-width: 1760px) {
+    .desktop{
+        display: none;
+    }
+    .tablet{
+        display: none;
+    }
+    .tabletv1{
+        display: none;
+    }
+    .desktop2{
+        display: none;
+    }
+    .desktop3{
+        display: none;
+    }
+    .desktop4{
+        display: none;
+    }
+    .phone{
+        display: none;
+    }
+    .desktop6{
+        display: none;
+    }
+
+}
+
+/* Monitores full-HD */
+@media (min-width: 1761px) and (max-width: 1920px) {
+    .desktop{
+        display: none;
+    }
+    .tablet{
+        display: none;
+    }
+    .tabletv1{
+        display: none;
+    }
+    .desktop2{
+        display: none;
+    }
+    .desktop3{
+        display: none;
+    }
+    .desktop4{
+        display: none;
+    }
+    .desktop5{
+        display: none;
+    }
+    .phone{
+        display: none;
+    }
+
+
+}
+@media (min-width: 1921px) {
+    .desktop{
+        display: none;
+    }
+    .tablet{
+        display: none;
+    }
+    .tabletv1{
+        display: none;
+    }
+    .desktop2{
+        display: none;
+    }
+    .desktop3{
+        display: none;
+    }
+    .desktop4{
+        display: none;
+    }
+    .phone{
+        display: none;
+    }
+    .desktop5{
+        display: none;
+    }
+    .desktop6{
+        display: none;
+    }
+}
+
+
+
+
+.tablet nav li{
+    padding-right: -100px;
+    text-align: left;
+    display:inline-block;
+    margin-left: -50px;
 }
 
 header, body, nav{
-    display: block;
+    display: inline-block;
     background-image: url(http://drive.google.com/uc?export=view&id=1AwoggbSMJbDyrrUehQJaGE9vJW0oBL4X);
-    background-size: cover;
-}
+    background-size: cover;}
+
