@@ -1,325 +1,417 @@
-
-body, html{
+body,
+html {
     height: 100%;
     width: 100%;
 }
-h1{
+
+h1 {
     margin: 0;
     text-align: center;
 }
-header{
+
+header {
     width: 100%;
 }
-header .navbar-brand{
+
+header .navbar-brand {
     -webkit-text-stroke: 2px gray;
     text-align: center;
     font-family: haettenschweiler;
-    
+
     padding-right: 10%;
-    
-} 
-header .desktop2 nav div div ul li a, header .desktop2 nav div div ul li{
-    
+
+}
+
+header .phone nav div .navbar-brand,
+header .tablet nav div .navbar-brand,
+header .tabletv1 nav div .navbar-brand,
+header .desktop nav div .navbar-brand {
+    padding-right: 0%;
+    margin-right: -5%;
+    font-size: 3vw;
+
+}
+
+header .phone nav div li,
+header .tablet nav div li,
+header .tabletv1 nav div li,
+header .desktop nav div li {
+    margin-left: -5%;
     -webkit-text-stroke: 1px rgb(211, 211, 253);
-    width:100%;
+    display: inline-block;
+    color: white;
+    padding-right: 5%;
+    font-size: 2vw;
+}
+
+
+header .desktop2 nav div div ul li a,
+header .desktop2 nav div div ul li {
+
+    -webkit-text-stroke: 1px rgb(211, 211, 253);
+    width: 100%;
     padding-right: 15%;
     display: inline-block;
     text-decoration: none;
     list-style: none;
-    
-    
+
+
 }
 
-header .desktop3 nav div div ul li a, header .desktop3 nav div div ul li{
-    
+header .desktop3 nav div div ul li a,
+header .desktop3 nav div div ul li {
+
     -webkit-text-stroke: 1px rgb(211, 211, 253);
     padding-right: 25%;
     display: inline-block;
     text-decoration: none;
     list-style: none;
-    
-    
+
+
 }
 
-header .desktop4 nav div div ul li a, header .desktop4 nav div div ul li{
-    
+header .desktop4 nav div div ul li a,
+header .desktop4 nav div div ul li {
+
     -webkit-text-stroke: 1px rgb(211, 211, 253);
     padding-right: 30%;
     display: inline-block;
     text-decoration: none;
     list-style: none;
-    
-    
+
+
 }
 
-header .desktop5 nav div div ul li a, header .desktop5 nav div div ul li{
-    
+header .desktop5 nav div div ul li a,
+header .desktop5 nav div div ul li {
+
     -webkit-text-stroke: 1px rgb(211, 211, 253);
     width: 100%;
     padding-right: 40%;
     display: inline-block;
     text-decoration: none;
     list-style: none;
-    
-    
+
+
 }
 
-header .desktop6 nav div div ul li a, header .desktop6 nav div div ul li{
-    
+header .desktop6 nav div div ul li a,
+header .desktop6 nav div div ul li {
+
     -webkit-text-stroke: 1px rgb(211, 211, 253);
     width: 100%;
     padding-right: 50%;
     display: inline-block;
     text-decoration: none;
     list-style: none;
-    
-    
+
+
 }
 
-.d-flex{
+.d-flex {
     padding-left: 10%;
     width: 40%
 }
-.d-flex input{
+
+.d-flex input {
     width: 100%;
     font-size: 100%;
 }
-.d-flex button{
+
+.d-flex button {
     width: 60%;
     font-size: 100%;
 }
 
-.phone nav li, .tabletv1 nav li, .tablet nav li, .desktop nav li{
-    font-size: 3vh;
-    margin-right: 10vh;
-    display: inline-block;
-    list-style: none;
-    text-decoration: none;
-}
 
-.phone h5, .tablet h5, .desktop h5, .desktop2 h5, .desktop3 h5, .desktop4 h5, .desktop5 h5, .desktop6 h5{
+
+.phone h5,
+.tablet h5,
+.desktop h5,
+.desktop2 h5,
+.desktop3 h5,
+.desktop4 h5,
+.desktop5 h5,
+.desktop6 h5 {
     -webkit-text-stroke: 1px rgb(252, 82, 82);
 }
 
 /* Telefonos */
-@media (max-width: 600px){
-    .desktop{
+@media (max-width: 600px) {
+    .desktop {
         display: none;
     }
-    .tabletv1{
+
+    .tabletv1 {
         display: none;
     }
-    .tablet{
+
+    .tablet {
         display: none;
     }
-    .desktop2{
+
+    .desktop2 {
         display: none;
     }
-    .desktop3{
+
+    .desktop3 {
         display: none;
     }
-    .desktop4{
+
+    .desktop4 {
         display: none;
     }
-    .desktop5{
+
+    .desktop5 {
         display: none;
     }
-    .desktop6{
+
+    .desktop6 {
         display: none;
     }
 }
 
 /* Tabletas v1 */
 @media (min-width: 601px) and (max-width: 719px) {
-    .desktop{
+    .desktop {
         display: none;
     }
-    .tablet{
+
+    .tablet {
         display: none;
     }
-    .phone{
+
+    .phone {
         display: none;
     }
-    .desktop2{
+
+    .desktop2 {
         display: none;
     }
-    .desktop3{
+
+    .desktop3 {
         display: none;
     }
-    .desktop4{
+
+    .desktop4 {
         display: none;
     }
-    .desktop5{
+
+    .desktop5 {
         display: none;
     }
-    .desktop6{
+
+    .desktop6 {
         display: none;
     }
 }
+
 /* Tabletas v2 */
 @media (min-width: 720px) and (max-width: 799px) {
-    .desktop{
+    .desktop {
         display: none;
     }
-    .phone{
+
+    .phone {
         display: none;
     }
-    .tabletv1{
+
+    .tabletv1 {
         display: none;
     }
-    .desktop2{
+
+    .desktop2 {
         display: none;
     }
-    .desktop3{
+
+    .desktop3 {
         display: none;
     }
-    .desktop4{
+
+    .desktop4 {
         display: none;
     }
-    .desktop5{
+
+    .desktop5 {
         display: none;
     }
-    .desktop6{
+
+    .desktop6 {
         display: none;
     }
 }
 
 /* Monitores low */
 @media (min-width: 800px) and (max-width: 999px) {
-    .phone{
+    .phone {
         display: none;
     }
-    .tablet{
+
+    .tablet {
         display: none;
     }
-    .tabletv1{
+
+    .tabletv1 {
         display: none;
     }
-    .desktop2{
+
+    .desktop2 {
         display: none;
     }
-    .desktop3{
+
+    .desktop3 {
         display: none;
     }
-    .desktop4{
+
+    .desktop4 {
         display: none;
     }
-    .desktop5{
+
+    .desktop5 {
         display: none;
     }
-    .desktop6{
+
+    .desktop6 {
         display: none;
     }
 }
 
 /* Monitores media-low */
 @media (min-width: 1000px) and (max-width: 1199px) {
-    .desktop{
+    .desktop {
         display: none;
     }
-    .tablet{
+
+    .tablet {
         display: none;
     }
-    .tabletv1{
+
+    .tabletv1 {
         display: none;
     }
-    .phone{
+
+    .phone {
         display: none;
     }
-    .desktop3{
+
+    .desktop3 {
         display: none;
     }
-    .desktop4{
+
+    .desktop4 {
         display: none;
     }
-    .desktop5{
+
+    .desktop5 {
         display: none;
     }
-    .desktop6{
+
+    .desktop6 {
         display: none;
     }
 }
 
 /* Monitores medios y televisores lcd */
 @media (min-width: 1200px) and (max-width: 1366px) {
-    .desktop{
+    .desktop {
         display: none;
     }
-    .tablet{
+
+    .tablet {
         display: none;
     }
-    .tabletv1{
+
+    .tabletv1 {
         display: none;
     }
-    .desktop2{
+
+    .desktop2 {
         display: none;
     }
-    .phone{
+
+    .phone {
         display: none;
     }
-    .desktop4{
+
+    .desktop4 {
         display: none;
     }
-    .desktop5{
+
+    .desktop5 {
         display: none;
     }
-    .desktop6{
+
+    .desktop6 {
         display: none;
     }
 }
 
 /* Monitores hd */
 @media (min-width: 1367px) and (max-width: 1560px) {
-    .desktop{
+    .desktop {
         display: none;
     }
-    .tablet{
+
+    .tablet {
         display: none;
     }
-    .tabletv1{
+
+    .tabletv1 {
         display: none;
     }
-    .desktop2{
+
+    .desktop2 {
         display: none;
     }
-    .desktop3{
+
+    .desktop3 {
         display: none;
     }
-    .phone{
+
+    .phone {
         display: none;
     }
-    .desktop5{
+
+    .desktop5 {
         display: none;
     }
-    .desktop6{
+
+    .desktop6 {
         display: none;
     }
 }
 
 /* Monitores full-HD media */
 @media (min-width: 1561px) and (max-width: 1760px) {
-    .desktop{
+    .desktop {
         display: none;
     }
-    .tablet{
+
+    .tablet {
         display: none;
     }
-    .tabletv1{
+
+    .tabletv1 {
         display: none;
     }
-    .desktop2{
+
+    .desktop2 {
         display: none;
     }
-    .desktop3{
+
+    .desktop3 {
         display: none;
     }
-    .desktop4{
+
+    .desktop4 {
         display: none;
     }
-    .phone{
+
+    .phone {
         display: none;
     }
-    .desktop6{
+
+    .desktop6 {
         display: none;
     }
 
@@ -327,75 +419,370 @@ header .desktop6 nav div div ul li a, header .desktop6 nav div div ul li{
 
 /* Monitores full-HD */
 @media (min-width: 1761px) and (max-width: 1920px) {
-    .desktop{
+    .desktop {
         display: none;
     }
-    .tablet{
+
+    .tablet {
         display: none;
     }
-    .tabletv1{
+
+    .tabletv1 {
         display: none;
     }
-    .desktop2{
+
+    .desktop2 {
         display: none;
     }
-    .desktop3{
+
+    .desktop3 {
         display: none;
     }
-    .desktop4{
+
+    .desktop4 {
         display: none;
     }
-    .desktop5{
+
+    .desktop5 {
         display: none;
     }
-    .phone{
+
+    .phone {
         display: none;
     }
 
 
 }
+
 @media (min-width: 1921px) {
-    .desktop{
+    .desktop {
         display: none;
     }
-    .tablet{
+
+    .tablet {
         display: none;
     }
-    .tabletv1{
+
+    .tabletv1 {
         display: none;
     }
-    .desktop2{
+
+    .desktop2 {
         display: none;
     }
-    .desktop3{
+
+    .desktop3 {
         display: none;
     }
-    .desktop4{
+
+    .desktop4 {
         display: none;
     }
-    .phone{
+
+    .phone {
         display: none;
     }
-    .desktop5{
+
+    .desktop5 {
         display: none;
     }
-    .desktop6{
+
+    .desktop6 {
         display: none;
     }
+}
+
+@media (max-width: 999px) {
+    body div .carousel-inner {
+        min-height: 350px;
+        max-height: 350px;
+        width: 100%;
+    }
+
+    .primercuadro div img {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        height: 300px;
+        border: 1px solid black;
+        border-style: groove;
+        border-radius: 1%;
+
+    }
+
+    .primercuadro div div p {
+        color: white;
+        margin-top: -250px;
+        width: 30%;
+        font-size: 75%;
+        margin-left: 55%;
+        text-align: justify;
+        background: black;
+        opacity: 0.6;
+        border-radius: 10%;
+        font-family: gill sans;
+        padding: 3%;
+    }
+
+    .segundocuadro div img {
+        width: 80%;
+        height: 300px;
+        margin-left: 10%;
+        margin-right: 10%;
+        border-radius: 8%;
+        position: relative;
+    }
+
+    .segundocuadro div div .titulosegundocuadro {
+        position: absolute;
+        top: 40%;
+        left: 40%;
+        font-size: 6vw;
+        font-weight: 900;
+        font-style: italic;
+        font-family: gill sans;
+        -webkit-text-stroke: 2px gold;
+        color: black;
+        text-decoration-style: wavy;
+        text-decoration-thickness: 5%;
+        text-align: center;
+        display: block;
+
+    }
+
+    .segundocuadro div div p {
+        position: absolute;
+        color: black;
+        font-size: 4vw;
+        font-weight: 800;
+        -webkit-text-stroke: 2px yellow;
+    }
+
+    .segundocuadro div div .textosegundocuadro1 {
+        top: 10%;
+        left: 15%;
+    }
+
+    .segundocuadro div div .textosegundocuadro2 {
+        top: 10%;
+        left: 65%;
+    }
+
+    .segundocuadro div div .textosegundocuadro3 {
+        bottom: 5%;
+        left: 15%;
+    }
+
+    .segundocuadro div div .textosegundocuadro4 {
+        bottom: -7%;
+        left: 40%;
+    }
+
+    .segundocuadro div div .textosegundocuadro5 {
+        bottom: 5%;
+        left: 65%;
+    }
+
+    .tercercuadro div iframe {
+        width: 50%;
+        height: 300px;
+        margin-left: 10%;
+        border-radius: 20%;
+        padding: 5% 5%;
+    }
+
+    .tercercuadro div div h5 {
+        position: absolute;
+        top: 10%;
+        left: 60%;
+        font-size: 5vw;
+    }
+
+    .tercercuadro div div p {
+        position: absolute;
+        padding-top: 5%;
+        left: 60%;
+        top: 20%;
+        text-align: justify;
+        width: 30%;
+        font-size: 100%;
+        color: white;
+    }
+
+    .cuartocuadro div #img1 {
+        height: 100px;
+        width: 20%;
+        border-radius: 100%;
+        transform: rotate(340deg);
+        margin-left: 10%;
+        margin-bottom: -5%;
+        margin-top: 5%;
+
+    }
+
+    .cuartocuadro div #img2 {
+        height: 100px;
+        width: 20%;
+        border-radius: 100%;
+        transform: rotate(40deg);
+        margin-left: 30%;
+        margin-top: 5%;
+        margin-bottom: 25%;
+        margin-right: -10%;
+
+    }
+
+    .cuartocuadro div div h5{
+        position: absolute;
+        top: 5%;
+        left: 60%;
+        font-size: 5vw;
+    }
+
+    .cuartocuadro div div p{
+        position: absolute;
+        padding-top: 2%;
+        left: 60%;
+        top: 15%;
+        text-align: justify;
+        width: 30%;
+        font-size: 80%;
+        color: white;
+    }
+
+}
+
+
+
+/*****************************************************************************************************************/
+
+
+
+@media (min-width: 1000px) and (max-width: 1920px) {
+    body div .carousel-inner {
+        min-height: 700px;
+        max-height: 700px;
+        width: 100%;
+
+    }
+
+    .primercuadro div div p {
+        margin-left: 65%;
+        margin-bottom: 25%;
+        font-size: 150%;
+        text-align: justify;
+        background: black;
+        opacity: .5;
+        border-radius: 10%;
+        width: 30%;
+        font-family: gill sans;
+        padding: 3%;
+    }
+
+    .segundocuadro div div p {
+        color: black;
+        font-weight: 800;
+        font-size: 300%;
+        -webkit-text-stroke: 2px yellow;
+    }
+
+    .segundocuadro div div .textosegundocuadro1 {
+        margin-top: -600px;
+        text-align: left;
+
+
+    }
+
+    .segundocuadro div div .textosegundocuadro2 {
+        margin-top: -90px;
+        text-align: right;
+
+    }
+
+    .segundocuadro div div .titulosegundocuadro {
+        margin-top: 125px;
+        font-size: 600%;
+        font-weight: 900;
+        font-style: italic;
+        font-family: gill sans;
+        -webkit-text-stroke: 2px gold;
+        color: black;
+        text-decoration-style: wavy;
+        text-decoration-thickness: 5%;
+        text-align: center;
+        display: block;
+    }
+
+    .segundocuadro div div .textosegundocuadro3 {
+        text-align: left;
+        margin-top: 160px;
+        margin-bottom: -650px;
+
+    }
+
+    .segundocuadro div div .textosegundocuadro4 {
+        margin-bottom: -400px;
+        margin-top: 578px;
+        text-align: center;
+        margin-left: 10%;
+    }
+
+    .segundocuadro div div .textosegundocuadro5 {
+        text-align: right;
+        margin-bottom: -480px;
+        margin-top: 326px;
+    }
+
+
+    .tercercuadro div div h5 {
+        margin-left: 65%;
+        margin-top: -550px;
+        font-size: 250%;
+        text-align: center;
+        width: 30%;
+        font-family: gill sans;
+
+    }
+
+    .tercercuadro div div p {
+        margin-left: 65%;
+        margin-bottom: 250px;
+        font-size: 150%;
+        text-align: justify;
+        width: 30%;
+        line-height: 200%;
+        font-family: gill sans;
+    }
+
+    .cuartocuadro div div h5 {
+        margin-left: 65%;
+        margin-top: -480px;
+        font-size: 250%;
+        text-align: center;
+        width: 30%;
+        font-family: gill sans;
+
+    }
+
+    .cuartocuadro div div p {
+        margin-left: 65%;
+        font-size: 140%;
+        text-align: justify;
+        width: 30%;
+        line-height: 200%;
+        font-family: gill sans;
+    }
+
 }
 
 
 
 
-.tablet nav li{
-    padding-right: -100px;
-    text-align: left;
-    display:inline-block;
-    margin-left: -50px;
-}
 
-header, body, nav{
+header,
+body,
+nav {
     display: inline-block;
     background-image: url(http://drive.google.com/uc?export=view&id=1AwoggbSMJbDyrrUehQJaGE9vJW0oBL4X);
-    background-size: cover;}
-
+    background-size: cover;
+}
