@@ -4,44 +4,67 @@ html {
     width: 100%;
 }
 
+body {
+    background: -webkit-linear-gradient(rgb(179, 1, 1), gold);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
 h1 {
     margin: 0;
     text-align: center;
 }
 
-header {
+header div {
+    background-color: rgb(54, 54, 54);
     width: 100%;
+
 }
+
 
 header .navbar-brand {
     -webkit-text-stroke: 2px gray;
     text-align: center;
     font-family: haettenschweiler;
-
-    padding-right: 10%;
+    margin-left: 8%;
+    padding-right: 2%;
 
 }
 
-header .phone nav div .navbar-brand,
-header .tablet nav div .navbar-brand,
-header .tabletv1 nav div .navbar-brand,
-header .desktop nav div .navbar-brand {
-    padding-right: 0%;
-    margin-right: -5%;
+header .phone .navbar-brand,
+header .tablet .navbar-brand,
+header .tabletv1 .navbar-brand,
+header .desktop .navbar-brand {
+    position: absolute;
+    padding-right: 5%;
     font-size: 3vw;
 
 }
 
-header .phone nav div li,
-header .tablet nav div li,
-header .tabletv1 nav div li,
-header .desktop nav div li {
-    margin-left: -5%;
+header .phone li a,
+header .tablet li a,
+header .tabletv1 li a,
+header .desktop li a {
+    text-decoration: none;
+    color: black;
+}
+
+header .phone li,
+header .tablet li,
+header .tabletv1 li,
+header .desktop li {
+    text-align: center;
+    margin-left: 22%;
     -webkit-text-stroke: 1px rgb(211, 211, 253);
     display: inline-block;
-    color: white;
-    padding-right: 5%;
+    color: black;
+    padding-left: 5%;
+    padding-right: 0%;
     font-size: 2vw;
+    margin-right: -20%;
+    margin-bottom: 4%;
+    margin-top: 3%;
 }
 
 
@@ -49,8 +72,9 @@ header .desktop2 nav div div ul li a,
 header .desktop2 nav div div ul li {
 
     -webkit-text-stroke: 1px rgb(211, 211, 253);
+    margin-left: 8%;
     width: 100%;
-    padding-right: 15%;
+    padding-right: 10%;
     display: inline-block;
     text-decoration: none;
     list-style: none;
@@ -62,7 +86,8 @@ header .desktop3 nav div div ul li a,
 header .desktop3 nav div div ul li {
 
     -webkit-text-stroke: 1px rgb(211, 211, 253);
-    padding-right: 25%;
+    margin-left: 8%;
+    padding-right: 20%;
     display: inline-block;
     text-decoration: none;
     list-style: none;
@@ -74,6 +99,7 @@ header .desktop4 nav div div ul li a,
 header .desktop4 nav div div ul li {
 
     -webkit-text-stroke: 1px rgb(211, 211, 253);
+    margin-left: 8%;
     padding-right: 30%;
     display: inline-block;
     text-decoration: none;
@@ -87,6 +113,7 @@ header .desktop5 nav div div ul li {
 
     -webkit-text-stroke: 1px rgb(211, 211, 253);
     width: 100%;
+    margin-left: 8%;
     padding-right: 40%;
     display: inline-block;
     text-decoration: none;
@@ -100,6 +127,7 @@ header .desktop6 nav div div ul li {
 
     -webkit-text-stroke: 1px rgb(211, 211, 253);
     width: 100%;
+    margin-left: 8%;
     padding-right: 50%;
     display: inline-block;
     text-decoration: none;
@@ -109,7 +137,7 @@ header .desktop6 nav div div ul li {
 }
 
 .d-flex {
-    padding-left: 10%;
+    padding-left: 15%;
     width: 40%
 }
 
@@ -418,7 +446,7 @@ header .desktop6 nav div div ul li {
 }
 
 /* Monitores full-HD */
-@media (min-width: 1761px) and (max-width: 1920px) {
+@media (min-width: 1761px) {
     .desktop {
         display: none;
     }
@@ -452,51 +480,17 @@ header .desktop6 nav div div ul li {
     }
 
 
-}
-
-@media (min-width: 1921px) {
-    .desktop {
-        display: none;
-    }
-
-    .tablet {
-        display: none;
-    }
-
-    .tabletv1 {
-        display: none;
-    }
-
-    .desktop2 {
-        display: none;
-    }
-
-    .desktop3 {
-        display: none;
-    }
-
-    .desktop4 {
-        display: none;
-    }
-
-    .phone {
-        display: none;
-    }
-
-    .desktop5 {
-        display: none;
-    }
-
-    .desktop6 {
-        display: none;
-    }
 }
 
 @media (max-width: 999px) {
     body div .carousel-inner {
+        background-image: url(http://drive.google.com/uc?export=view&id=1z1n0Y5C_Hyyo4y4nbPB3s-Si1q974ZuC);
+        background-size: 100% 300px;
+        background-repeat: no-repeat;
         min-height: 350px;
         max-height: 350px;
         width: 100%;
+        margin-top: 4%;
     }
 
     .primercuadro div img {
@@ -632,14 +626,14 @@ header .desktop6 nav div div ul li {
 
     }
 
-    .cuartocuadro div div h5{
+    .cuartocuadro div div h5 {
         position: absolute;
         top: 5%;
         left: 60%;
         font-size: 5vw;
     }
 
-    .cuartocuadro div div p{
+    .cuartocuadro div div p {
         position: absolute;
         padding-top: 2%;
         left: 60%;
@@ -650,7 +644,34 @@ header .desktop6 nav div div ul li {
         color: white;
     }
 
+    .container2 {
+        line-height: 200%;
+        background: rgb(211, 211, 211);
+        border-radius: 50%;
+        opacity: .7;
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+
+    .container2 a {
+        font-size: 90%;
+        color: black;
+        font-weight: 800;
+        max-width: 100%;
+        text-decoration: none;
+        text-align: center;
+        margin: 5%;
+        width: 10%;
+        padding-right: 3%;
+        border-right: 1px solid black;
+    }
+
+
+
 }
+
+
+
 
 
 
@@ -658,11 +679,20 @@ header .desktop6 nav div div ul li {
 
 
 
-@media (min-width: 1000px) and (max-width: 1920px) {
+@media (min-width: 1000px){
+
+    header div nav div div ul li a:hover {
+        -webkit-text-stroke: 2px rgb(200, 200, 245);
+    }
+
     body div .carousel-inner {
+        background-image: url(http://drive.google.com/uc?export=view&id=1z1n0Y5C_Hyyo4y4nbPB3s-Si1q974ZuC);
+        background-size: 100% 700px;
+        background-repeat: no-repeat;
         min-height: 700px;
         max-height: 700px;
         width: 100%;
+        margin-top: 3%;
 
     }
 
@@ -689,6 +719,7 @@ header .desktop6 nav div div ul li {
     .segundocuadro div div .textosegundocuadro1 {
         margin-top: -600px;
         text-align: left;
+        font-family:verdana;
 
 
     }
@@ -696,6 +727,7 @@ header .desktop6 nav div div ul li {
     .segundocuadro div div .textosegundocuadro2 {
         margin-top: -90px;
         text-align: right;
+        font-family:verdana;
 
     }
 
@@ -717,6 +749,7 @@ header .desktop6 nav div div ul li {
         text-align: left;
         margin-top: 160px;
         margin-bottom: -650px;
+        font-family:verdana;
 
     }
 
@@ -725,12 +758,14 @@ header .desktop6 nav div div ul li {
         margin-top: 578px;
         text-align: center;
         margin-left: 10%;
+        font-family:verdana;
     }
 
     .segundocuadro div div .textosegundocuadro5 {
         text-align: right;
         margin-bottom: -480px;
         margin-top: 326px;
+        font-family:verdana;
     }
 
 
@@ -773,16 +808,59 @@ header .desktop6 nav div div ul li {
         font-family: gill sans;
     }
 
-}
+    .nav2 {
+        background-image: url(http://drive.google.com/uc?export=view&id=168RBjWjoDvxAtQyVZrg5g42iMvBr9eZk);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: center;
+        padding-top: 4vw;
+        padding-bottom: 4vw;
+        border: 1px solid;
+        padding-left: 2vw;
+        padding-right: 2vw;
+
+    }
 
 
+    .nav2 .nav{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .nav2 .nav-item a {
+        width: 80%;
+        font-size: 150%;
+        font-weight: 700;
+        color: black;
 
 
+    }
 
-header,
-body,
-nav {
-    display: inline-block;
-    background-image: url(http://drive.google.com/uc?export=view&id=1AwoggbSMJbDyrrUehQJaGE9vJW0oBL4X);
-    background-size: cover;
+    .nav2 .nav-item a:hover {
+
+        -webkit-text-stroke: 2px rgb(189, 13, 13);
+        font-size: 180%;
+    }
+
+
+    .titulomenus{
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        padding: 3%;
+        border: .5vw goldenrod;
+        border-style: outset groove outset;
+        background: -webkit-linear-gradient(left,rgb(148, 19, 19), rgb(238, 60, 60));
+        border-bottom-right-radius: 2vw;
+        border-top-left-radius: 2vw;
+    }
+
+    .titulomenus h2{
+        font-size: 3vw;
+        color: white;
+        -webkit-text-stroke: .1vw black;
+        font-family: fantasy;
+        font-weight: 500;
+        padding-left: 5%;
+    }
 }
