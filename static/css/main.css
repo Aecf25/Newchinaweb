@@ -831,21 +831,24 @@ header .desktop6 nav div div ul li {
         font-size: 150%;
         font-weight: 700;
         color: black;
-
-
     }
 
     .nav2 .nav-item a:hover {
 
         -webkit-text-stroke: 2px rgb(189, 13, 13);
-        font-size: 180%;
+        font-size: 165%;
+        padding-right: 2%;
     }
 
+
+    .Menucompleto{
+        margin-bottom: 5%;
+        margin-top: 5%;
+    }
 
     .titulomenus{
         margin-left: 10%;
         margin-right: 10%;
-        margin-top: 5%;
         margin-bottom: 5%;
         padding: 3%;
         border: .5vw goldenrod;
@@ -863,4 +866,65 @@ header .desktop6 nav div div ul li {
         font-weight: 500;
         padding-left: 5%;
     }
+
+
+    .Menucompleto div div #containermenu{
+        margin-left: 15%;
+        height: 20vw;
+        display: inline-flex;
+        max-width: 70%;
+        margin-bottom: 5vw;
+    }
+
+    .Menucompleto div div #containermenu .container2{
+        width: 12vw;
+        background: -webkit-linear-gradient(bottom, gray, white);
+        border-radius: 1vw;
+        padding-bottom: 1vw;
+        text-align: center;
+
+    }
+
+    .Menucompleto div div #containermenu .container2 img{
+        height: 10vw;
+        width: 11vw;
+        border-radius: 1vw;
+        padding: .2vw;
+        border-style: groove outset groove;
+
+
+    }
+
+    .Menucompleto div div #containermenu .container2 h3{
+        font-size: 2vw;
+        font-family: sans-serif;
+        text-align: center;
+        font-weight: 800;
+
+    }
+
+    .Menucompleto div div #containermenu .container2 p{
+        font-size: 1vw;
+        font-family: sans-serif;
+        text-align: justify;
+        margin-left: 10%;
+        margin-right: 10%;
+        font-weight: 700;
+    }
+
+    .Menucompleto div div #containermenu #cont2{
+        margin-left: 6vw
+    }
+
+    .Menucompleto div div #containermenu #cont3{
+        margin-left: 6vw
+    }
+
+    .Menucompleto div div #containermenu #cont4{
+        margin-left: 6vw
+    }
+
+
+
+
 }
