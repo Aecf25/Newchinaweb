@@ -644,7 +644,7 @@ header .desktop6 nav div div ul li {
         color: white;
     }
 
-    .container2 {
+    .container3 {
         line-height: 200%;
         background: rgb(211, 211, 211);
         border-radius: 50%;
@@ -653,7 +653,7 @@ header .desktop6 nav div div ul li {
         margin-left: 10%;
     }
 
-    .container2 a {
+    .container3 a {
         font-size: 90%;
         color: black;
         font-weight: 800;
@@ -665,6 +665,181 @@ header .desktop6 nav div div ul li {
         padding-right: 3%;
         border-right: 1px solid black;
     }
+
+    .Menucompleto {
+        margin-bottom: 5%;
+        margin-top: 5%;
+    }
+
+    .titulomenus {
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 5%;
+        padding: 3%;
+        border: .5vw goldenrod;
+        border-style: outset groove outset;
+        background: -webkit-linear-gradient(left, rgb(148, 19, 19), rgb(238, 60, 60));
+        border-bottom-right-radius: 2vw;
+        border-top-left-radius: 2vw;
+    }
+
+    .titulomenus h2 {
+        font-size: 3vw;
+        color: white;
+        -webkit-text-stroke: .1vw black;
+        font-family: fantasy;
+        font-weight: 500;
+        padding-left: 5%;
+    }
+
+
+    .Menucompleto div div #containermenu {
+        margin-left: 15%;
+        height: 25vw;
+        display: inline-flex;
+        max-width: 70%;
+        margin-bottom: 5vw;
+    }
+
+    .Menucompleto div div #containermenu .container2 {
+        width: 12vw;
+        background: -webkit-linear-gradient(bottom, gray, white);
+        border-radius: 1vw;
+        padding-bottom: 1vw;
+        text-align: center;
+        cursor: pointer;
+        transition: all 1s ease;
+        box-shadow: 1vw 1vw 2vw black, 1vw 1vw 2vw white;
+    }
+
+    .Menucompleto div div #containermenu .container2:hover {
+        box-shadow: 1vw 1vw 2vw white, 1vw 1vw 2vw black
+    }
+
+
+
+    .Menucompleto div div #containermenu .container2 img {
+        height: 10vw;
+        width: 11vw;
+        border-radius: 1vw;
+        padding: .2vw;
+        border-style: groove outset groove;
+
+
+    }
+
+    .Menucompleto div div #containermenu .container2 h3 {
+        font-size: 2vw;
+        font-family: sans-serif;
+        text-align: center;
+        font-weight: 800;
+
+    }
+
+    .Menucompleto div div #containermenu .container2 p {
+        font-size: 1vw;
+        font-family: sans-serif;
+        text-align: justify;
+        margin-left: 10%;
+        margin-right: 10%;
+        font-weight: 700;
+        margin-bottom: -.05vw;
+    }
+
+    .Menucompleto div div #containermenu #cont2 {
+        margin-left: 6vw
+    }
+
+    .Menucompleto div div #containermenu #cont3 {
+        margin-left: 6vw
+    }
+
+    .Menucompleto div div #containermenu #cont4 {
+        margin-left: 6vw
+    }
+
+    .Menucompleto div div #containermenu .container2 button {
+        padding-left: 1vw;
+        padding-right: 1vw;
+        margin-left: 5vw;
+        font-size: .9vw;
+        border-radius: .5vw;
+        margin-top: 1vw;
+        background: rgb(165, 165, 243);
+        border: 2px solid rgb(83, 83, 83);
+        cursor: pointer;
+        transition: all 1s ease;
+        box-shadow: .2vw .2vw 1vw black, -.2vw -.2vw 1vw white;
+        position: relative;
+        overflow: hidden;
+    }
+
+
+    .Menucompleto div div #containermenu .container2 button span {
+        position: absolute;
+        background: white;
+        transition: .5s;
+        border-style: inset;
+        border-radius: 5vw;
+        border-width: .1vw;
+
+    }
+
+    .Menucompleto div div #containermenu .container2 button span:nth-child(1) {
+        width: 100%;
+        height: .1vw;
+        top: 0;
+        left: -100%;
+    }
+
+    .Menucompleto div div #containermenu .container2 button span:nth-child(2) {
+        width: 100%;
+        height: .1vw;
+        bottom: 0;
+        right: -100%
+    }
+
+    .Menucompleto div div #containermenu .container2 button span:nth-child(3) {
+        width: .1vw;
+        height: 100%;
+        left: 0;
+        bottom: -100%
+    }
+
+    .Menucompleto div div #containermenu .container2 button span:nth-child(4) {
+        width: .1vw;
+        height: 100%;
+        right: 0;
+        top: -100%
+    }
+
+    .Menucompleto div div #containermenu .container2 button:hover span:nth-child(1) {
+        left: 0;
+    }
+
+    .Menucompleto div div #containermenu .container2 button:hover span:nth-child(2) {
+        right: 0;
+    }
+
+    .Menucompleto div div #containermenu .container2 button:hover span:nth-child(3) {
+        bottom: 0;
+    }
+
+    .Menucompleto div div #containermenu .container2 button:hover span:nth-child(4) {
+        top: 0;
+    }
+
+
+    .Menucompleto div div #containermenu .container2 button:hover {
+        box-shadow: .2vw .2vw 1vw white, -.2vw -.2vw 1vw black;
+    }
+
+
+
+    .Menucompleto div div #containermenu .container2 button:active {
+        box-shadow: inset .1vw .1vw 1vw white, inset -.1vw -.1vw 1vw black
+    }
+
 
 
 
@@ -679,7 +854,7 @@ header .desktop6 nav div div ul li {
 
 
 
-@media (min-width: 1000px){
+@media (min-width: 1000px) {
 
     header div nav div div ul li a:hover {
         -webkit-text-stroke: 2px rgb(200, 200, 245);
@@ -719,7 +894,7 @@ header .desktop6 nav div div ul li {
     .segundocuadro div div .textosegundocuadro1 {
         margin-top: -600px;
         text-align: left;
-        font-family:verdana;
+        font-family: verdana;
 
 
     }
@@ -727,7 +902,7 @@ header .desktop6 nav div div ul li {
     .segundocuadro div div .textosegundocuadro2 {
         margin-top: -90px;
         text-align: right;
-        font-family:verdana;
+        font-family: verdana;
 
     }
 
@@ -749,7 +924,7 @@ header .desktop6 nav div div ul li {
         text-align: left;
         margin-top: 160px;
         margin-bottom: -650px;
-        font-family:verdana;
+        font-family: verdana;
 
     }
 
@@ -758,14 +933,14 @@ header .desktop6 nav div div ul li {
         margin-top: 578px;
         text-align: center;
         margin-left: 10%;
-        font-family:verdana;
+        font-family: verdana;
     }
 
     .segundocuadro div div .textosegundocuadro5 {
         text-align: right;
         margin-bottom: -480px;
         margin-top: 326px;
-        font-family:verdana;
+        font-family: verdana;
     }
 
 
@@ -822,10 +997,11 @@ header .desktop6 nav div div ul li {
     }
 
 
-    .nav2 .nav{
+    .nav2 .nav {
         margin-left: 10%;
         margin-right: 10%;
     }
+
     .nav2 .nav-item a {
         width: 80%;
         font-size: 150%;
@@ -841,24 +1017,24 @@ header .desktop6 nav div div ul li {
     }
 
 
-    .Menucompleto{
+    .Menucompleto {
         margin-bottom: 5%;
         margin-top: 5%;
     }
 
-    .titulomenus{
+    .titulomenus {
         margin-left: 10%;
         margin-right: 10%;
         margin-bottom: 5%;
         padding: 3%;
         border: .5vw goldenrod;
         border-style: outset groove outset;
-        background: -webkit-linear-gradient(left,rgb(148, 19, 19), rgb(238, 60, 60));
+        background: -webkit-linear-gradient(left, rgb(148, 19, 19), rgb(238, 60, 60));
         border-bottom-right-radius: 2vw;
         border-top-left-radius: 2vw;
     }
 
-    .titulomenus h2{
+    .titulomenus h2 {
         font-size: 3vw;
         color: white;
         -webkit-text-stroke: .1vw black;
@@ -868,24 +1044,32 @@ header .desktop6 nav div div ul li {
     }
 
 
-    .Menucompleto div div #containermenu{
+    .Menucompleto div div #containermenu {
         margin-left: 15%;
-        height: 20vw;
+        height: 22vw;
         display: inline-flex;
         max-width: 70%;
         margin-bottom: 5vw;
     }
 
-    .Menucompleto div div #containermenu .container2{
+    .Menucompleto div div #containermenu .container2 {
         width: 12vw;
         background: -webkit-linear-gradient(bottom, gray, white);
         border-radius: 1vw;
         padding-bottom: 1vw;
         text-align: center;
-
+        cursor: pointer;
+        transition: all 1s ease;
+        box-shadow: 1vw 1vw 2vw black, 1vw 1vw 2vw white;
     }
 
-    .Menucompleto div div #containermenu .container2 img{
+    .Menucompleto div div #containermenu .container2:hover {
+        box-shadow: 1vw 1vw 2vw white, 1vw 1vw 2vw black
+    }
+
+
+
+    .Menucompleto div div #containermenu .container2 img {
         height: 10vw;
         width: 11vw;
         border-radius: 1vw;
@@ -895,7 +1079,7 @@ header .desktop6 nav div div ul li {
 
     }
 
-    .Menucompleto div div #containermenu .container2 h3{
+    .Menucompleto div div #containermenu .container2 h3 {
         font-size: 2vw;
         font-family: sans-serif;
         text-align: center;
@@ -903,7 +1087,7 @@ header .desktop6 nav div div ul li {
 
     }
 
-    .Menucompleto div div #containermenu .container2 p{
+    .Menucompleto div div #containermenu .container2 p {
         font-size: 1vw;
         font-family: sans-serif;
         text-align: justify;
@@ -912,17 +1096,101 @@ header .desktop6 nav div div ul li {
         font-weight: 700;
     }
 
-    .Menucompleto div div #containermenu #cont2{
+    .Menucompleto div div #containermenu #cont2 {
         margin-left: 6vw
     }
 
-    .Menucompleto div div #containermenu #cont3{
+    .Menucompleto div div #containermenu #cont3 {
         margin-left: 6vw
     }
 
-    .Menucompleto div div #containermenu #cont4{
+    .Menucompleto div div #containermenu #cont4 {
         margin-left: 6vw
     }
+
+    .Menucompleto div div #containermenu .container2 button {
+        padding-left: 1vw;
+        padding-right: 1vw;
+        margin-left: 5vw;
+        font-size: .9vw;
+        border-radius: .5vw;
+        margin-top: 1vw;
+        background: rgb(165, 165, 243);
+        border: 2px solid rgb(83, 83, 83);
+        cursor: pointer;
+        transition: all 1s ease;
+        box-shadow: .2vw .2vw 1vw black, -.2vw -.2vw 1vw white;
+        position: relative;
+        overflow: hidden;
+    }
+
+
+    .Menucompleto div div #containermenu .container2 button span {
+        position: absolute;
+        background: white;
+        transition: .5s;
+        border-style: inset;
+        border-radius: 5vw;
+        border-width: .1vw;
+
+    }
+
+    .Menucompleto div div #containermenu .container2 button span:nth-child(1) {
+        width: 100%;
+        height: .1vw;
+        top: 0;
+        left: -100%;
+    }
+
+    .Menucompleto div div #containermenu .container2 button span:nth-child(2) {
+        width: 100%;
+        height: .1vw;
+        bottom: 0;
+        right: -100%
+    }
+
+    .Menucompleto div div #containermenu .container2 button span:nth-child(3) {
+        width: .1vw;
+        height: 100%;
+        left: 0;
+        bottom: -100%
+    }
+
+    .Menucompleto div div #containermenu .container2 button span:nth-child(4) {
+        width: .1vw;
+        height: 100%;
+        right: 0;
+        top: -100%
+    }
+
+    .Menucompleto div div #containermenu .container2 button:hover span:nth-child(1) {
+        left: 0;
+    }
+
+    .Menucompleto div div #containermenu .container2 button:hover span:nth-child(2) {
+        right: 0;
+    }
+
+    .Menucompleto div div #containermenu .container2 button:hover span:nth-child(3) {
+        bottom: 0;
+    }
+
+    .Menucompleto div div #containermenu .container2 button:hover span:nth-child(4) {
+        top: 0;
+    }
+
+
+    .Menucompleto div div #containermenu .container2 button:hover {
+        box-shadow: .2vw .2vw 1vw white, -.2vw -.2vw 1vw black;
+    }
+
+
+
+    .Menucompleto div div #containermenu .container2 button:active {
+        box-shadow: inset .1vw .1vw 1vw white, inset -.1vw -.1vw 1vw black
+    }
+
+
 
 
 
