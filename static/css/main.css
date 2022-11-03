@@ -65,6 +65,7 @@ header .desktop li {
     margin-right: -20%;
     margin-bottom: 4%;
     margin-top: 3%;
+
 }
 
 
@@ -483,6 +484,7 @@ header .desktop6 nav div div ul li {
 }
 
 @media (max-width: 999px) {
+
     body div .carousel-inner {
         background-image: url(http://drive.google.com/uc?export=view&id=1z1n0Y5C_Hyyo4y4nbPB3s-Si1q974ZuC);
         background-size: 100% 300px;
@@ -840,9 +842,37 @@ header .desktop6 nav div div ul li {
         box-shadow: inset .1vw .1vw 1vw white, inset -.1vw -.1vw 1vw black
     }
 
+    .Menucompleto div div #containermenu .container2 button span:nth-child(5) {
+        width: 100%;
+        height: 100%;
+        left: -100%;
+        top: 0;
+        background: rgb(165, 165, 243);
 
 
+    }
 
+    .Menucompleto div div #containermenu .container2 button span:nth-child(5) p{
+        font-size: .7vw;
+        text-align: center;
+        overflow-wrap: break-word;
+        margin-top: 10%;
+        margin-left: -10%;
+        margin-right: -10%;
+    }
+    .Menucompleto div div #containermenu .container2 button:hover span:nth-child(5) {
+        left:0;
+        background: rgb(165, 165, 243);
+        color: black;
+        text-align: center;
+        transition: all 1.5s;
+    }
+
+    .Menucompleto div div #containermenu .container2 button:hover span:nth-child(5) p {
+        left:0;
+        background: rgb(165, 165, 243);
+        text-align: center;
+    }
 }
 
 
@@ -859,6 +889,7 @@ header .desktop6 nav div div ul li {
     header div nav div div ul li a:hover {
         -webkit-text-stroke: 2px rgb(200, 200, 245);
     }
+
 
     body div .carousel-inner {
         background-image: url(http://drive.google.com/uc?export=view&id=1z1n0Y5C_Hyyo4y4nbPB3s-Si1q974ZuC);
@@ -1075,6 +1106,7 @@ header .desktop6 nav div div ul li {
         border-radius: 1vw;
         padding: .2vw;
         border-style: groove outset groove;
+        margin-top: 5%;
 
 
     }
@@ -1094,6 +1126,7 @@ header .desktop6 nav div div ul li {
         margin-left: 10%;
         margin-right: 10%;
         font-weight: 700;
+        margin-top: -5%;
     }
 
     .Menucompleto div div #containermenu #cont2 {
@@ -1163,6 +1196,7 @@ header .desktop6 nav div div ul li {
         top: -100%
     }
 
+
     .Menucompleto div div #containermenu .container2 button:hover span:nth-child(1) {
         left: 0;
     }
@@ -1179,7 +1213,6 @@ header .desktop6 nav div div ul li {
         top: 0;
     }
 
-
     .Menucompleto div div #containermenu .container2 button:hover {
         box-shadow: .2vw .2vw 1vw white, -.2vw -.2vw 1vw black;
     }
@@ -1191,8 +1224,138 @@ header .desktop6 nav div div ul li {
     }
 
 
+    .Menucompleto div div #containermenu .container2 button span:nth-child(5) {
+        width: 100%;
+        height: 100%;
+        left: -100%;
+        top: 0;
+        background: rgb(165, 165, 243);
+
+
+    }
+
+    .Menucompleto div div #containermenu .container2 button span:nth-child(5) p{
+        font-size: .7vw;
+        text-align: center;
+        overflow-wrap: break-word;
+        margin-top: 5%;
+        margin-left: -10%;
+        margin-right: -10%;
+    }
+    .Menucompleto div div #containermenu .container2 button:hover span:nth-child(5) {
+        left:0;
+        background: rgb(165, 165, 243);
+        color: black;
+        text-align: center;
+        transition: all 1.5s;
+    }
+
+    .Menucompleto div div #containermenu .container2 button:hover span:nth-child(5) p {
+        left:0;
+        background: rgb(165, 165, 243);
+        text-align: center;
+    }
 
 
 
+}
+
+
+
+body #subheader{
+    background: rgb(54, 54, 54);
+    border-top: 2px solid black;
+    list-style: none;
+    width: 100%;
+    height: 5vw;
+    position: relative;
+}
+
+body #subheader #Delivery {
+    display: inline-block;
+    padding-right: 5vw;
+    font-size: 1vw;
+    color: aqua;
+    position: absolute;
+    right: 18vw;
+    top: 2.5vw;
+}
+
+body #subheader #WhatsApp {
+    display: inline-block;
+    padding-right: 5vw;
+    font-size: 1vw;
+    color: aqua;
+    position: absolute;
+    right: 10vw;
+    top: 2.5vw;
+}
+
+body #subheader #ListadePedido  {
+    display: inline-block;
+    padding-right: 5vw;
+    font-size: 1vw;
+    color: aqua;
+    position: absolute;
+    right: 0vw;
+    top: 2.5vw;
+}
+
+body #subheader a {
+    text-decoration: none;
+    -webkit-text-stroke: .05vw aqua;
+    transition: all 1s ease;
+}
+
+body #subheader a:hover {
+    text-decoration: none;
+    -webkit-text-stroke: .07vw aquamarine;
+    font-size: 1.03vw;
+   
+}
+
+
+
+body #subheader svg{
+    width:1.6vw;
+    height:1.5vw
+}
+
+body #subheader #carrito{
+    position: absolute;
+    top: .8vw;
+    right: 7.5vw;
+    color: aquamarine;
+    transition: all .5s ease;
+
+}
+
+body #subheader #whatsapp{
+    position: absolute;
+    top: .8vw;
+    right: 16.5vw;
+    color: aquamarine;
+    transition: all .5s ease;
+
+}
+
+body #subheader svg:hover{
+    position: absolute;
+    top: .75vw;
+    color: aquamarine;
+    height: 2vw;
+    width: 2vw;
+    box-shadow: inset 10vw 0 0 0 rgb(23, 115, 219);
+    border-radius: 10vw;
+    
+}
+
+body #subheader #delivery{
+    position: absolute;
+    top: .8vw;
+    right: 24vw;
+    color: aquamarine;
+    transition: all .5s ease;
+    
 
 }
