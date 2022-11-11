@@ -15,6 +15,7 @@
         integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="{{ url_for('static', filename ='css/main.css') }}">
+
 </head>
 
 
@@ -323,8 +324,9 @@
             </nav>
         </div>
     </header>
-
+    
     <div id="subheader">
+        <span id="cestacarritopend" class="cesta-carrito"></span>
         <li id="Delivery">
             <a href="/">Delivery</a>
         </li>
@@ -332,9 +334,9 @@
             <a href="/">WhatsApp</a>
         </li>
         <li id="ListadePedido">
-            <a href="/about">Lista de Pedido</a>
+            <p>Lista de Pedido</p>
         </li>
-        <a href="/about">
+        <a id="carritomodal">
             <svg id="carrito" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                 class="bi bi-cart-check-fill" viewBox="0 0 16 16">
                 <path
@@ -1023,6 +1025,9 @@
     </div>
 
 
+    <div class="modal-container" id="modalventana">
+    </div>
+
 
     <div>
         <div>
@@ -1032,6 +1037,12 @@
     </div>
 
 
+
+
+    <script src="{{ url_for('static', filename ='js/products.js') }}"></script>
+    <script src="{{ url_for('static', filename ='js/layout.js') }}"></script>
+    <script src="{{ url_for('static', filename ='js/app.js') }}"></script>
+    <script src="{{ url_for('static', filename ='js/carritopendiente.js') }}"></script>
 
     <footer
         style="color: black; padding-bottom: 20px; padding-top: 20px; text-align: center; background: rgb(170, 168, 168); opacity: .5;">
