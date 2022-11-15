@@ -2,8 +2,10 @@ const listadeCompras = document.querySelector('#containermenu1');
 const vercarritolayout = document.getElementById("carritomodal");
 const modalcontainer = document.getElementById("modalventana");
 const carritocestapend = document.getElementById("cestacarritopend");
+const cuerpopagina = document.querySelector("#cuerpoppal");
 
-let carrito = [];
+
+let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
 comida.forEach((product) => {
     let content = document.createElement("div");
@@ -23,6 +25,7 @@ comida.forEach((product) => {
         <span></span>
         <span></span>
         <span></span>
+        <span><p>Agregar</p></span>
     `;
     content.append(comprar);
     comprar.addEventListener("click", () => {
@@ -46,6 +49,7 @@ comida.forEach((product) => {
         }
         console.log(carrito);
         carritocestacontar();
+        savelocal()
     })
 });
 
@@ -70,6 +74,7 @@ comida2.forEach((product) => {
         <span></span>
         <span></span>
         <span></span>
+        <span><p>Agregar</p></span>
     `;
     content.append(comprar);
     comprar.addEventListener("click", () => {
@@ -93,8 +98,11 @@ comida2.forEach((product) => {
         }
         console.log(carrito);
         carritocestacontar();
+        savelocal()
     })
 });
+
+
 
 
 

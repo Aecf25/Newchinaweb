@@ -2,7 +2,7 @@ const comida = [
     {
         id: 1,
         nombre: "Combo1",
-        precio: 22,
+        precio: 22.00,
         img: "http://drive.google.com/uc?export=view&id=1lYQ6vhdHRA-W8pxycbsfGbdeiGuAHjxf",
         desc: "Arroz Especial + Lumpia + Pollo Agridulce",
         cantidad:1
@@ -31,7 +31,6 @@ const comida = [
         desc: "Arroz Especial + Lumpia + Pollo Agridulce",
         cantidad:1
     },
-
 
 ];
 
@@ -78,7 +77,7 @@ const comida3 = [
     {
         id: 9,
         nombre: "Combo1",
-        precio: 10,
+        precio: 10.00,
         img: "http://drive.google.com/uc?export=view&id=1lYQ6vhdHRA-W8pxycbsfGbdeiGuAHjxf",
         desc: "Arroz Especial + Lumpia + Pollo Agridulce",
         cantidad:1
@@ -86,9 +85,10 @@ const comida3 = [
     {
         id: 10,
         nombre: "Combo1",
-        precio: 10,
+        precio: 10.50,
         img: "http://drive.google.com/uc?export=view&id=1lYQ6vhdHRA-W8pxycbsfGbdeiGuAHjxf",
         desc: "Arroz Especial + Lumpia + Pollo Agridulce",
         cantidad:1
     },
 ]
+

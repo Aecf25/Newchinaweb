@@ -1,3 +1,4 @@
+
 const listadeCompras3 = document.querySelector('#containermenu3');
 
 
@@ -20,6 +21,7 @@ comida3.forEach((product) => {
         <span></span>
         <span></span>
         <span></span>
+        <span><p>Agregar</p></span>
     `;
     content.append(comprar);
     comprar.addEventListener("click", () =>{
@@ -43,5 +45,7 @@ comida3.forEach((product) => {
         }
         console.log(carrito);
         carritocestacontar();
+        savelocal()
     })
 });
+
