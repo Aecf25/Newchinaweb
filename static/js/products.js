@@ -46,7 +46,7 @@ const comida2 = [
     },
     {
         id: 6,
-        nombre: "Combo1",
+        nombre: "Combo 1",
         precio: 10,
         img: "http://drive.google.com/uc?export=view&id=1lYQ6vhdHRA-W8pxycbsfGbdeiGuAHjxf",
         desc: "Arroz Especial + Lumpia + Pollo Agridulce",

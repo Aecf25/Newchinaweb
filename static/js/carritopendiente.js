@@ -33,11 +33,15 @@ const pintarcarrito = () => {
 
     const modaltabladesc = document.createElement("div");
     modaltabladesc.className = "modaltitulotabla"
-    modaltabladesc.innerHTML = `
-    <h2 id="descprod">Descrición Comida</h2>
+    if (carrito.length > 0) {
+        modaltabladesc.innerHTML = `
+    <h2 id="descprod">Descrición</h2>
     <h2 id="cantprod">Cantidad</h2>
-    <h2 id="totalprod">Total</h2>
-    `;
+    <h2 id="totalprod">Sub-Total</h2>
+    `} else {
+        modaltabladesc.innerHTML = `
+        <p class="textocarritolimpio">NO TIENE PRODUCTOS ENLISTADOS</p>`
+    };
     modalcontainer.append(modaltabladesc);
 
     carrito.forEach((product) => {
@@ -47,7 +51,7 @@ const pintarcarrito = () => {
         <img src= "${product.img}">
         <h3>${product.nombre}</h3>
         <p id="descripcion"> ${product.desc}</p>
-        <p id="costound">REF ${product.precio * product.cantidad}</p>
+        <p id="costound">Ref. ${product.precio * product.cantidad}</p>
         <p id="cantund">${product.cantidad, (product.cantidad < 10) ? "0" + product.cantidad : product.cantidad}</p>
         
         `;
@@ -66,7 +70,7 @@ const pintarcarrito = () => {
         let mascantidad = document.createElement("button");
         mascantidad.className = "bttnplus"
         mascantidad.innerHTML = `
-        <p>➕</p>`;
+        <p>+</p>`;
         mascantidad.addEventListener("click", () => {
             product.cantidad++;
             savelocal();
@@ -78,7 +82,7 @@ const pintarcarrito = () => {
         let menoscantidad = document.createElement("button");
         menoscantidad.className = "bttnmin"
         menoscantidad.innerHTML = `
-        <p>➖</p>`;
+        <p>_</p>`;
         menoscantidad.addEventListener("click", () => {
             if (product.cantidad > 1) {
                 product.cantidad--;
@@ -96,17 +100,38 @@ const pintarcarrito = () => {
     /* "el" es cualquier variable q representa los items o productos. "acc" es el total que empieza en 0 y se van sumando los precios*/
     const total = carrito.reduce((acc, el) => acc + el.precio * el.cantidad, 0);
 
-    const totalbuy = document.createElement("div")
-    totalbuy.className = "total-content"
-    totalbuy.innerHTML = `
-    TOTAL A PAGAR: REF ${total} 
-    `;
+    const totalbuy = document.createElement("div");
+    if (carrito.length > 0) {
+        totalbuy.className = "total-content"
+        totalbuy.innerHTML = `
+        Total a Pagar: Ref. ${total} 
+        `
+    }
+    ;
     modalcontainer.append(totalbuy);
 
-    // const suscribirpedido = document.createElement("button");
-    // suscribirpedido.className = "botonsuscribir";
-    // suscribirpedido.innerText = "SUSCRIBIR PEDIDO";
-    // modalcontainer.append(suscribirpedido);
+
+    const fondodivcarrito = document.createElement("div");
+    fondodivcarrito.className = "fondodivcarrito";
+    modalcontainer.append(fondodivcarrito);
+
+    const limpiarcarrito = document.createElement("button");
+    limpiarcarrito.className = "botonlimpiar";
+    limpiarcarrito.innerText = "LIMPIAR LISTA";
+    limpiarcarrito.addEventListener("click", () =>{
+        carrito = [];
+        savelocal();
+        pintarcarrito();
+        carritocestacontar();
+    });
+    fondodivcarrito.append(limpiarcarrito);
+
+    const suscribirpedido = document.createElement("button");
+    suscribirpedido.className = "botoninscribir";
+    suscribirpedido.innerText = "REALIZAR PEDIDO";
+    fondodivcarrito.append(suscribirpedido);
+
+
 
 };
 
@@ -143,6 +168,8 @@ const eliminarproducto = (id) => {
     savelocal();
     pintarcarrito();
 }
+
+
 
 
 

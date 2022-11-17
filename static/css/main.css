@@ -646,27 +646,6 @@ header .desktop6 nav div div ul li {
         color: white;
     }
 
-    .container3 {
-        line-height: 200%;
-        background: rgb(211, 211, 211);
-        border-radius: 50%;
-        opacity: .7;
-        margin-right: 10%;
-        margin-left: 10%;
-    }
-
-    .container3 a {
-        font-size: 90%;
-        color: black;
-        font-weight: 800;
-        max-width: 100%;
-        text-decoration: none;
-        text-align: center;
-        margin: 5%;
-        width: 10%;
-        padding-right: 3%;
-        border-right: 1px solid black;
-    }
 
     .Menucompleto {
         margin-bottom: 5%;
@@ -847,6 +826,45 @@ header .desktop6 nav div div ul li {
 
 
 
+.nav2 {
+    background-image: url(http://drive.google.com/uc?export=view&id=168RBjWjoDvxAtQyVZrg5g42iMvBr9eZk);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    padding-top: 4vw;
+    padding-bottom: 4vw;
+    border: .1vw solid;
+    padding-left: 2vw;
+    padding-right: 2vw;
+
+}
+
+
+.nav2 .nav {
+    margin-left: 7vw;
+    margin-right: 7vw;
+}
+
+.nav2 .nav-item a {
+    width: 80%;
+    font-size: 1.5vw;
+    font-weight: 700;
+    color: black;
+}
+
+.nav2 .nav-item a:hover {
+
+    -webkit-text-stroke: .1vw rgb(189, 13, 13);
+    font-size: 1.58vw;
+    
+}
+
+
+
+
+
+
+
 
 
 
@@ -983,40 +1001,6 @@ header .desktop6 nav div div ul li {
         line-height: 200%;
         font-family: gill sans;
     }
-
-    .nav2 {
-        background-image: url(http://drive.google.com/uc?export=view&id=168RBjWjoDvxAtQyVZrg5g42iMvBr9eZk);
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-        background-position: center;
-        padding-top: 4vw;
-        padding-bottom: 4vw;
-        border: 1px solid;
-        padding-left: 2vw;
-        padding-right: 2vw;
-
-    }
-
-
-    .nav2 .nav {
-        margin-left: 10%;
-        margin-right: 10%;
-    }
-
-    .nav2 .nav-item a {
-        width: 80%;
-        font-size: 150%;
-        font-weight: 700;
-        color: black;
-    }
-
-    .nav2 .nav-item a:hover {
-
-        -webkit-text-stroke: 2px rgb(189, 13, 13);
-        font-size: 165%;
-        padding-right: 2%;
-    }
-
 
     .Menucompleto {
         margin-bottom: 5%;
@@ -1598,6 +1582,12 @@ body .modal-container  .modal-header-button{
     cursor: pointer;
 }
 
+body .modal-container  .modal-header-button:hover{
+    -webkit-text-stroke: .3vw rgb(255, 37, 37);
+    font-size: 3vw;
+    left: 90.5%;
+}
+
 body .modal-container .modaltitulotabla{
     display: inline-flex;
     width: 100%;
@@ -1610,14 +1600,22 @@ body .modal-container .modaltitulotabla h2{
     font-family: gill sans;
 }
 body .modal-container .modaltitulotabla #descprod{
-    margin-left: 25%;
+    margin-left: 27.5%;
 }
 body .modal-container .modaltitulotabla #cantprod{
-    margin-left: 7.5%;
+    margin-left: 16%;
 }
 body .modal-container .modaltitulotabla #totalprod{
-    margin-left: 11.5%;
+    margin-left: 9%;
 }
+
+body .modal-container .modaltitulotabla .textocarritolimpio{
+    font-weight: 900;
+    margin: auto;
+    font-size: 2vw;
+    font-family: verdana;
+}
+
 
 body .modal-container .modal-content{
     width: 90%;
@@ -1639,8 +1637,8 @@ body .modal-container .modal-content h3{
     display: inline-flex;
     position: absolute;
     left: 25%;
-    top: -1vw;
-    font-size: 2vw
+    top: -2vw;
+    font-size: 1.5vw
 
 }
 
@@ -1664,6 +1662,8 @@ body .modal-container .modal-content #costound{
     width: 20%;
     top: .8vw;
     font-size: 1.5vw;
+    font-family: times new roman;
+    font-weight: 900;
 }
 
 body .modal-container .modal-content #cantund{
@@ -1673,7 +1673,8 @@ body .modal-container .modal-content #cantund{
     width: 20%;
     top: .9vw;
     font-size: 1.5vw;
-    font-weight: 800;
+    font-family: times new roman;
+    font-weight: 900;
 }
 
 body .modal-container .modal-content .bttnplus{
@@ -1686,19 +1687,22 @@ body .modal-container .modal-content .bttnplus{
     padding: 0;
     border: none;
     overflow: hidden;
-    background: black;
+    background: red;
     border-top-right-radius: .5vw;
     border-bottom-right-radius: .5vw;
+    
 
 }
 
 body .modal-container .modal-content .bttnplus p{
     position: absolute;
-    top: .2vw;
-    left: .3vw;
-    background: black;
+    top: -.33vw;
+    left: .35vw;
+    background: red;
     border-radius: 1vw;
     text-align: center;
+    font-size: 1.5vw;
+    color: white;
 }
 
 
@@ -1719,18 +1723,21 @@ body .modal-container .modal-content .bttnmin{
     padding: 0;
     border: none;
     overflow: hidden;
-    background: black;
+    background: red;
     border-top-left-radius: .5vw;
     border-bottom-left-radius: .5vw;
 }
 
 body .modal-container .modal-content .bttnmin p{
     position: absolute;
-    top: .2vw;
-    left: .3vw;
-    background: black;
+    top: -1.05vw;
+    left: .35vw;
+    background: red;
     border-radius: 1vw;
     text-align: center;
+    font-size: 1.5vw;
+    color: white;
+    font-weight: 800;
 }
 
 
@@ -1750,16 +1757,63 @@ body .modal-container .total-content{
     margin-top: 3vw;
     font-size: 1.5vw;
     font-weight: 900;
-    font-family: cursive;
+    font-style: italic;
+    margin-left: 22.5vw;
+
 }
 
-/* body .modal-container .botonsuscribir{ 
-    font-size: 1vw;
-    padding: 1vw;
-    font-family: sans-serif;
-    font-weight: 700;
+
+body .modal-container .fondodivcarrito{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    margin-top: 2vw;
+    margin-bottom: 1vw;
 }
-*/
+
+body .modal-container .fondodivcarrito .botoninscribir{
+    width: 30%;
+    border-radius: .5vw;
+    background: red;
+    padding-top: .5vw;
+    padding-bottom: .5vw;
+    font-weight: 700;
+    font-family: verdana;
+    font-size: 1vw;
+    margin-left: 2vw;
+    border: none;
+    color: WHITE;
+
+}
+
+body .modal-container .fondodivcarrito .botonlimpiar{
+    width: 30%;
+    border-radius: .5vw;
+    background: red;
+    padding-top: .5vw;
+    padding-bottom: .5vw;
+    font-weight: 700;
+    font-family: verdana;
+    font-size: 1vw;
+    margin-right: 2vw;
+    border: none;
+    color: WHITE;
+    
+}
+
+body .modal-container .fondodivcarrito .botonlimpiar:hover{
+    border: .1vw solid black;
+    border-style:inset;
+    
+}
+
+body .modal-container .fondodivcarrito .botoninscribir:hover{
+    border: .1vw solid black;
+    border-style:inset;
+    
+}
+
+
 body .cesta-carrito{
     position: absolute;
     background: -webkit-linear-gradient(left, white, rgb(92, 92, 92));
@@ -1776,3 +1830,4 @@ body .cesta-carrito{
     transition: all 1s;
     opacity: 0;
 }
+
