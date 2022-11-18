@@ -1,4 +1,4 @@
-const listadeCompras = document.querySelector('#containermenu1');
+const listadeCompras = document.getElementById('containermenu1');
 const vercarritolayout = document.getElementById("carritomodal");
 const modalcontainer = document.getElementById("modalventana");
 const carritocestapend = document.getElementById("cestacarritopend");
@@ -20,12 +20,12 @@ comida.forEach((product) => {
     let comprar = document.createElement("button");
     comprar.className = "button"
     comprar.innerHTML = `
-    REF ${product.precio}
+    Ref ${product.precio}
         <span></span>
         <span></span>
         <span></span>
         <span></span>
-        <span><p>Agregar</p></span>
+        <span><p>Agregar a la Cesta</p></span>
     `;
     content.append(comprar);
     comprar.addEventListener("click", () => {
@@ -53,7 +53,7 @@ comida.forEach((product) => {
     })
 });
 
-const listadeCompras2 = document.querySelector('#containermenu2');
+const listadeCompras2 = document.getElementById('containermenu2');
 
 comida2.forEach((product) => {
     let content = document.createElement("div");
@@ -66,15 +66,65 @@ comida2.forEach((product) => {
     listadeCompras2.append(content);
 
 
+
     let comprar = document.createElement("button");
     comprar.className = "button"
     comprar.innerHTML = `
-    REF ${product.precio}
+    Ref ${product.precio}
         <span></span>
         <span></span>
         <span></span>
         <span></span>
-        <span><p>Agregar</p></span>
+        <span><p>Agregar a la Cesta</p></span>
+    `;
+    content.append(comprar);
+    comprar.addEventListener("click", () => {
+        const repeat = carrito.some((repeatproduct) => repeatproduct.id === product.id);
+
+        if (repeat) {
+            carrito.map((prod) => {
+                if (prod.id === product.id) {
+                    prod.cantidad++;
+                }
+            });
+        } else {
+            carrito.push({
+                id: product.id,
+                img: product.img,
+                nombre: product.nombre,
+                desc: product.desc,
+                precio: product.precio,
+                cantidad: product.cantidad,
+            });
+        }
+        console.log(carrito);
+        carritocestacontar();
+        savelocal();
+    })
+});
+
+const listadeCompras4 = document.querySelector('#containermenu3entremes');
+
+comida4.forEach((product) => {
+    let content = document.createElement("div");
+    content.className = "card1"
+    content.innerHTML = `
+        <img src="${product.img}">
+        <h3>${product.nombre}</h3>
+        <p>${product.desc}</p>
+    `;
+    listadeCompras4.append(content);
+
+
+    let comprar = document.createElement("button");
+    comprar.className = "button"
+    comprar.innerHTML = `
+    Ref ${product.precio}
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span><p>Agregar a la Cesta</p></span>
     `;
     content.append(comprar);
     comprar.addEventListener("click", () => {
@@ -102,7 +152,53 @@ comida2.forEach((product) => {
     })
 });
 
+const listadeCompras5 = document.querySelector('#containermenu4entremes');
+
+comida5.forEach((product) => {
+    let content = document.createElement("div");
+    content.className = "card1"
+    content.innerHTML = `
+        <img src="${product.img}">
+        <h3>${product.nombre}</h3>
+        <p>${product.desc}</p>
+    `;
+    listadeCompras5.append(content);
 
 
+    let comprar = document.createElement("button");
+    comprar.className = "button"
+    comprar.innerHTML = `
+    Ref ${product.precio}
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span><p>Agregar a la Cesta</p></span>
+    `;
+    content.append(comprar);
+    comprar.addEventListener("click", () => {
+        const repeat = carrito.some((repeatproduct) => repeatproduct.id === product.id);
+
+        if (repeat) {
+            carrito.map((prod) => {
+                if (prod.id === product.id) {
+                    prod.cantidad++;
+                }
+            });
+        } else {
+            carrito.push({
+                id: product.id,
+                img: product.img,
+                nombre: product.nombre,
+                desc: product.desc,
+                precio: product.precio,
+                cantidad: product.cantidad,
+            });
+        }
+        console.log(carrito);
+        carritocestacontar();
+        savelocal()
+    })
+});
 
 

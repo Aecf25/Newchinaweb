@@ -5,7 +5,7 @@ const comida = [
         precio: 22.00,
         img: "http://drive.google.com/uc?export=view&id=1lYQ6vhdHRA-W8pxycbsfGbdeiGuAHjxf",
         desc: "Arroz Especial + Lumpia + Pollo Agridulce",
-        cantidad:1
+        cantidad: 1
     },
     {
         id: 2,
@@ -13,7 +13,7 @@ const comida = [
         precio: 10,
         img: "http://drive.google.com/uc?export=view&id=1lYQ6vhdHRA-W8pxycbsfGbdeiGuAHjxf",
         desc: "Arroz Especial + Lumpia + Pollo Agridulce",
-        cantidad:1
+        cantidad: 1
     },
     {
         id: 3,
@@ -21,7 +21,7 @@ const comida = [
         precio: 10,
         img: "http://drive.google.com/uc?export=view&id=1lYQ6vhdHRA-W8pxycbsfGbdeiGuAHjxf",
         desc: "Arroz Especial + Lumpia + Pollo Agridulce",
-        cantidad:1
+        cantidad: 1
     },
     {
         id: 4,
@@ -29,7 +29,7 @@ const comida = [
         precio: 10,
         img: "http://drive.google.com/uc?export=view&id=1lYQ6vhdHRA-W8pxycbsfGbdeiGuAHjxf",
         desc: "Arroz Especial + Lumpia + Pollo Agridulce",
-        cantidad:1
+        cantidad: 1
     },
 
 ];
@@ -42,7 +42,7 @@ const comida2 = [
         precio: 10,
         img: "http://drive.google.com/uc?export=view&id=1lYQ6vhdHRA-W8pxycbsfGbdeiGuAHjxf",
         desc: "Arroz Especial + Lumpia + Pollo Agridulce",
-        cantidad:1
+        cantidad: 1
     },
     {
         id: 6,
@@ -50,7 +50,7 @@ const comida2 = [
         precio: 10,
         img: "http://drive.google.com/uc?export=view&id=1lYQ6vhdHRA-W8pxycbsfGbdeiGuAHjxf",
         desc: "Arroz Especial + Lumpia + Pollo Agridulce",
-        cantidad:1
+        cantidad: 1
     },
     {
         id: 7,
@@ -58,7 +58,7 @@ const comida2 = [
         precio: 10,
         img: "http://drive.google.com/uc?export=view&id=1lYQ6vhdHRA-W8pxycbsfGbdeiGuAHjxf",
         desc: "Arroz Especial + Lumpia + Pollo Agridulce",
-        cantidad:1
+        cantidad: 1
     },
     {
         id: 8,
@@ -66,12 +66,11 @@ const comida2 = [
         precio: 10,
         img: "http://drive.google.com/uc?export=view&id=1lYQ6vhdHRA-W8pxycbsfGbdeiGuAHjxf",
         desc: "Arroz Especial + Lumpia + Pollo Agridulce",
-        cantidad:1
+        cantidad: 1
     },
 
 
 ];
-
 
 const comida3 = [
     {
@@ -80,7 +79,7 @@ const comida3 = [
         precio: 10.00,
         img: "http://drive.google.com/uc?export=view&id=1lYQ6vhdHRA-W8pxycbsfGbdeiGuAHjxf",
         desc: "Arroz Especial + Lumpia + Pollo Agridulce",
-        cantidad:1
+        cantidad: 1
     },
     {
         id: 10,
@@ -88,7 +87,60 @@ const comida3 = [
         precio: 10.50,
         img: "http://drive.google.com/uc?export=view&id=1lYQ6vhdHRA-W8pxycbsfGbdeiGuAHjxf",
         desc: "Arroz Especial + Lumpia + Pollo Agridulce",
-        cantidad:1
+        cantidad: 1
     },
 ]
 
+const comida4 = [
+    {
+        id: 11,
+        nombre: "Combo1",
+        precio: 10.00,
+        img: "http://drive.google.com/uc?export=view&id=1lYQ6vhdHRA-W8pxycbsfGbdeiGuAHjxf",
+        desc: "Arroz Especial + Lumpia + Pollo Agridulce",
+        cantidad: 1
+    },
+    {
+        id: 12,
+        nombre: "Combo1",
+        precio: 10.50,
+        img: "http://drive.google.com/uc?export=view&id=1lYQ6vhdHRA-W8pxycbsfGbdeiGuAHjxf",
+        desc: "Arroz Especial + Lumpia + Pollo Agridulce",
+        cantidad: 1
+    },
+]
+
+const comida5 = [
+    {
+        id: 13,
+        nombre: "Lumpias",
+        precio: 6.00,
+        img: "http://drive.google.com/uc?export=view&id=1lYQ6vhdHRA-W8pxycbsfGbdeiGuAHjxf",
+        desc: "Arroz Especial + Lumpia + Pollo Agridulce",
+        cantidad: 1
+    },
+    {
+        id: 14,
+        nombre: "Wanton Frito",
+        precio: 6.50,
+        img: "http://drive.google.com/uc?export=view&id=1lYQ6vhdHRA-W8pxycbsfGbdeiGuAHjxf",
+        desc: "Arroz Especial + Lumpia + Pollo Agridulce",
+        cantidad: 1
+    },
+    {
+        id: 15,
+        nombre: "Wanton Frito Relleno",
+        precio: 8.00,
+        img: "http://drive.google.com/uc?export=view&id=1lYQ6vhdHRA-W8pxycbsfGbdeiGuAHjxf",
+        desc: "Lamina delgada de masa rellena con camarón y pollo",
+        cantidad: 1
+    },
+    {
+        id: 16,
+        nombre: "Pan Chino",
+        precio: 1.50,
+        img: "http://drive.google.com/uc?export=view&id=1lYQ6vhdHRA-W8pxycbsfGbdeiGuAHjxf",
+        desc: "Pan a base de mantequilla y azucar (4unds)",
+        cantidad: 1
+    },
+]

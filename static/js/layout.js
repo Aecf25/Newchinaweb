@@ -16,12 +16,12 @@ comida3.forEach((product) => {
     let comprar = document.createElement("button");
     comprar.className = "button"
     comprar.innerHTML = `
-    REF ${product.precio}
+    Ref ${product.precio}
         <span></span>
         <span></span>
         <span></span>
         <span></span>
-        <span><p>Agregar</p></span>
+        <span><p>Agregar a la Cesta</p></span>
     `;
     content.append(comprar);
     comprar.addEventListener("click", () =>{
