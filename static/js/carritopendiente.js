@@ -59,7 +59,7 @@ const pintarcarrito = () => {
         modalcontainer.append(carritocontent);
 
         let eliminar = document.createElement("span");
-        eliminar.innerText = "❌";
+        eliminar.innerText = "🗑";
         eliminar.className = "deleteprod";
         carritocontent.append(eliminar);
 
@@ -118,7 +118,7 @@ const pintarcarrito = () => {
     const limpiarcarrito = document.createElement("button");
     limpiarcarrito.className = "botonlimpiar";
     limpiarcarrito.innerText = "LIMPIAR LISTA";
-    limpiarcarrito.addEventListener("click", () =>{
+    limpiarcarrito.addEventListener("click", () => {
         carrito = [];
         savelocal();
         pintarcarrito();
@@ -129,7 +129,16 @@ const pintarcarrito = () => {
     const suscribirpedido = document.createElement("button");
     suscribirpedido.className = "botoninscribir";
     suscribirpedido.innerText = "REALIZAR PEDIDO";
+    suscribirpedido.addEventListener("click", () =>{
+        let productosalwha = [];
+        for (let i = 0; i< carrito.length; i++){
+            productosalwha.push(carrito[i].nombre, "; " ," cantidad: " ,carrito[i].cantidad, '%0A');
+        } 
+        window.location.href = "https://api.whatsapp.com/send?phone=+584129851959&text=Buenas Tardes, este es mi pedido: " + '%0A' + JSON.stringify(productosalwha).replace(/[",]+/g, '') + '%0A' + "Total: Ref. " + total 
+    } )
     fondodivcarrito.append(suscribirpedido);
+
+
 
 
 
@@ -206,4 +215,6 @@ const savelocal = () => {
 
 // Get Item  en los () va el string del savelocal ""
 //  
+
+
 

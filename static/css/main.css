@@ -16,6 +16,10 @@ h1 {
     text-align: center;
 }
 
+header{
+    overflow: hidden;
+}
+
 header div {
     background-color: rgb(54, 54, 54);
     width: 100%;
@@ -27,9 +31,8 @@ header .navbar-brand {
     -webkit-text-stroke: 2px gray;
     text-align: center;
     font-family: haettenschweiler;
-    margin-left: 8%;
+    margin-left: 4%;
     padding-right: 2%;
-
 }
 
 header .phone .navbar-brand,
@@ -73,13 +76,12 @@ header .desktop2 nav div div ul li a,
 header .desktop2 nav div div ul li {
 
     -webkit-text-stroke: 1px rgb(211, 211, 253);
-    margin-left: 8%;
+    margin-left: 10%;
     width: 100%;
-    padding-right: 10%;
+    padding-right: 30%;
     display: inline-block;
     text-decoration: none;
     list-style: none;
-
 
 }
 
@@ -87,12 +89,11 @@ header .desktop3 nav div div ul li a,
 header .desktop3 nav div div ul li {
 
     -webkit-text-stroke: 1px rgb(211, 211, 253);
-    margin-left: 8%;
-    padding-right: 20%;
+    margin-left: 20%;
+    padding-right: 30%;
     display: inline-block;
     text-decoration: none;
     list-style: none;
-
 
 }
 
@@ -100,7 +101,7 @@ header .desktop4 nav div div ul li a,
 header .desktop4 nav div div ul li {
 
     -webkit-text-stroke: 1px rgb(211, 211, 253);
-    margin-left: 8%;
+    margin-left: 30%;
     padding-right: 30%;
     display: inline-block;
     text-decoration: none;
@@ -114,7 +115,7 @@ header .desktop5 nav div div ul li {
 
     -webkit-text-stroke: 1px rgb(211, 211, 253);
     width: 100%;
-    margin-left: 8%;
+    margin-left: 35%;
     padding-right: 40%;
     display: inline-block;
     text-decoration: none;
@@ -128,8 +129,8 @@ header .desktop6 nav div div ul li {
 
     -webkit-text-stroke: 1px rgb(211, 211, 253);
     width: 100%;
-    margin-left: 8%;
-    padding-right: 50%;
+    margin-left: 5vw;
+    padding-right: 5vw;
     display: inline-block;
     text-decoration: none;
     list-style: none;
@@ -855,7 +856,7 @@ header .desktop6 nav div div ul li {
 
     -webkit-text-stroke: .1vw rgb(189, 13, 13);
     font-size: 1.58vw;
-    
+
 }
 
 
@@ -1188,7 +1189,7 @@ header .desktop6 nav div div ul li {
 
 
 /************************** botones  pequeños  de la sub-barra del header *************************************/
-body{
+body {
     border: 1px solid;
 }
 
@@ -1205,7 +1206,7 @@ body #subheader {
     transition: all 1.5s;
 }
 
-body #subheader.hide{
+body #subheader.hide {
     top: -10vw;
 }
 
@@ -1320,18 +1321,29 @@ body #subheader #delivery {
 
 /*********************** Cards de menu *******************************/
 
-body .titulomenus{
+body .titulomenus {
     margin-top: 5vw;
+    position: relative;
 }
 
-body #listadecomida{
+body .titulomenus img {
+    position: absolute;
+    z-index: 0;
+    height: 6vw;
+    width: 5vw;
+    right: 5vw;
+    top: 1.5vw;
+}
+
+body #listadecomida {
     background: white;
     color: black;
     margin-right: 10%;
     margin-left: 10%;
     padding-left: 0;
 }
-body #listadecomida a{
+
+body #listadecomida a {
     margin-right: 10%;
 }
 
@@ -1340,7 +1352,7 @@ body .containerseccion {
     margin-left: 15%;
     height: 25vw;
     display: flex;
-    margin-bottom: 5vw; 
+    margin-bottom: 5vw;
     width: 70%;
 
 }
@@ -1349,23 +1361,20 @@ body .containerseccion div {
     margin-right: 2%;
     margin-left: 5%;
     width: 12vw;
-    height: 22vw;
-    background: -webkit-linear-gradient(bottom, gray, white);
+    height: 20vw;
+    background: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.815), white);
     border-radius: 1vw;
     padding-bottom: 1vw;
     text-align: center;
     cursor: pointer;
     transition: all 1s ease;
     box-shadow: 1vw 1vw 2vw black, 1vw 1vw 2vw white;
-    overflow: hidden;
     position: relative;
 }
 
 body .containerseccion div:hover {
     box-shadow: 1vw 1vw 2vw white, 1vw 1vw 2vw black
 }
-
-
 
 body .containerseccion div img {
     height: 8vw;
@@ -1383,28 +1392,50 @@ body .containerseccion div h3 {
     font-family: sans-serif;
     text-align: center;
     font-weight: 800;
-    width:100%;
-    max-height: 4vw;
+    width: 100%;
+    max-height: 3.5vw;
     overflow: scroll;
     padding-bottom: 1vw;
+    position: absolute;
 }
-body .containerseccion div h3::-webkit-scrollbar{
+
+body .containerseccion div h3::-webkit-scrollbar {
     display: none;
 }
 
-body .containerseccion div p {
+body .containerseccion div .descproducto {
     font-size: 1vw;
     font-family: sans-serif;
     text-align: justify;
-    margin-left: 1vw;
-    margin-right: 1vw;
+    top: 12vw;
+    left: 1vw;
+    width: 80%;
     font-weight: 700;
-    margin-top: -.8vw;
     max-height: 5vw;
     overflow: scroll;
+    position: absolute;
 }
 
-body .containerseccion div p::-webkit-scrollbar{
+body .containerseccion div .precioproducto {
+    color: white;
+    position: absolute;
+    top: 17vw;
+    font-size: 1.2vw;
+    font-family: gill sans;
+    font-weight: 700;
+    text-align: left;
+    left: 1vw;
+    width: 45%;
+    background: red;
+    border-top-left-radius: .5vw;
+    border-bottom-left-radius: .5vw;
+    border-top-right-radius: .6vw;
+    border-bottom-right-radius: .6vw;
+    max-height: 1.8vw;
+    padding-left: .5vw;
+}
+
+body .containerseccion div p::-webkit-scrollbar {
     display: none;
 }
 
@@ -1421,29 +1452,34 @@ body .containerseccion div #cont4 {
 }
 
 body .containerseccion div button {
-    width: 100%;
+    width: 80%;
     height: 2.5vw;
     text-align: center;
-    padding-bottom: 2vw;
     font-size: .9vw;
-    border-bottom-left-radius: 1vw;
-    border-bottom-right-radius: 1vw;
-    background: rgb(165, 165, 243);
+    border-radius: .5vw;
+    background: red;
     border: .1vw rgb(83, 83, 83);
     cursor: pointer;
     transition: all 1s ease;
     box-shadow: .2vw .2vw 1vw black, -.2vw -.2vw 1vw white;
     overflow: hidden;
     position: absolute;
-    bottom: 0;
-    left: 0;
+    bottom: -3vw;
+    left: 1.2vw;
     font-family: verdana;
     font-weight: 700;
+    color: white;
 }
 
 body .containerseccion div button:hover {
     box-shadow: .2vw .2vw 1vw white, -.2vw -.2vw 1vw black;
-    background: rgb(150, 150, 221);
+    background: red;
+    width: 90%;
+    margin: auto;
+    left: .6vw;
+    bottom: -3.3vw;
+    font-size: .95vw;
+    border-radius: .5vw;
 }
 
 
@@ -1451,6 +1487,46 @@ body .containerseccion div button:hover {
 body .containerseccion div button:active {
     box-shadow: inset .1vw .1vw 1vw white, inset -.1vw -.1vw 1vw black
 }
+
+body .containerseccion div .ventanaproductoboton {
+    width: 80%;
+    height: 2.5vw;
+    text-align: center;
+    font-size: .9vw;
+    border-radius: .5vw;
+    background: red;
+    border: .1vw rgb(83, 83, 83);
+    cursor: pointer;
+    transition: all 1s ease;
+    box-shadow: .2vw .2vw 1vw black, -.2vw -.2vw 1vw white;
+    overflow: hidden;
+    position: absolute;
+    bottom: -3vw;
+    left: 1.2vw;
+    font-family: verdana;
+    font-weight: 700;
+    color: white;
+}
+
+body .containerseccion div .ventanaproductoboton:hover {
+    box-shadow: .2vw .2vw 1vw white, -.2vw -.2vw 1vw black;
+    background: red;
+    width: 90%;
+    margin: auto;
+    left: .6vw;
+    bottom: -3.3vw;
+    font-size: .95vw;
+    border-radius: .5vw;
+}
+
+
+
+body .containerseccion div .ventanaproductoboton:active {
+    box-shadow: inset .1vw .1vw 1vw white, inset -.1vw -.1vw 1vw black
+}
+
+
+
 
 
 body .containerseccion div button span {
@@ -1558,15 +1634,207 @@ body .containerseccion div button:hover span:nth-child(5) p {
     font-family: verdana;
 }
 
+/* *****************MODAL VENTANA PRODUCTO INDIVIDUAL************************ */
+
+body .modalproductoventana {
+    width: 40vw;
+    margin-top: -2vw;
+    margin-left: 5vw;
+    max-height: 45vw;
+    min-height: 45vw;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 9;
+    top: 5vw;
+    left: 25%;
+    border-radius: 3%;
+    box-shadow: inset .4vw .4vw 5vw black;
+    transition: all 1s;
+    opacity: 0;
+    transform: translateY(-500%);
+}
+
+body .modalproductoventana::-webkit-scrollbar {
+    display: none;
+}
 
 
+body .modalproductoventana:hover {
+    background: rgb(188, 229, 243);
+}
+
+
+body .modalproductoventana div {
+    width: 80%;
+    height: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+body .modalproductoventana h2 {
+    text-align: center;
+    font-style: italic;
+    font-size: 2.5vw;
+    margin: auto;
+    margin-top: 65%;
+    max-width: 80%;
+    max-height: 8vw;
+    overflow: scroll;
+    font-family: sans-serif;
+}
+
+body .modalproductoventana h2::-webkit-scrollbar {
+    display: none;
+}
+
+body .modalproductoventana .modal-header-button {
+    color: red;
+    position: fixed;
+    left: 100%;
+    cursor: pointer;
+    font-size: 1vw;
+    border-radius: 100%;
+    background: rgba(0, 0, 0, 0.384);
+    align-items: center;
+    padding: .35vw;
+    top: -1.5vw;
+
+}
+
+body .modalproductoventana .modal-header-button:hover {
+    -webkit-text-stroke: .3vw rgb(255, 37, 37);
+    font-size: 1.1vw;
+    left: 100%;
+}
+
+body .modalproductoventana img {
+    position: absolute;
+    top: 5%;
+    width: 80%;
+    height: 40%;
+    border-radius: 1vw;
+    border: .2vw solid gold;
+}
+
+body .modalproductoventana .descproducto {
+    position: absolute;
+    top: 65%;
+    max-width: 80%;
+    font-size: 1.5vw;
+    font-weight: 550;
+    font-family: sans-serif;
+    max-height: 7vw;
+    overflow: scroll;
+    text-align: justify;
+}
+
+body .modalproductoventana .descproducto::-webkit-scrollbar {
+    display: none;
+}
+
+body .modalproductoventana .precioproducto {
+    position: absolute;
+    top: 40vw;
+    left: 17vw;
+    font-size: 1.5vw;
+    height: 3vw;
+    font-family: sans-serif;
+}
+
+body .modalproductoventana .bttnplus {
+    position: absolute;
+    height: 2vw;
+    top: 40vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    border: .1vw solid black;
+    background: red;
+    color: white;
+    left: 12vw;
+}
+
+body .modalproductoventana .bttnplus p {
+    position: absolute;
+    top: -.35vw;
+    left: .45vw;
+    font-size: 1.5vw;
+    font-weight: 700;
+}
+
+body .modalproductoventana .bttnmin {
+    position: absolute;
+    height: 2vw;
+    top: 40vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    border: .1vw solid black;
+    background: red;
+    color: white;
+}
+
+body .modalproductoventana .bttnmin p {
+    position: absolute;
+    top: -1vw;
+    left: .64vw;
+    font-size: 1.5vw;
+    font-weight: 900;
+}
+
+
+body .modalproductoventana .cantproducto {
+    position: absolute;
+    top: 40vw;
+    left: 6vw;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    border: .1vw solid black;
+    height: 2vw;
+    background: white;
+    font-size: 1.5vw;
+}
+
+body .modalproductoventana .cantproductonum {
+    position: absolute;
+    top: 39.8vw;
+    left: 8.25vw;
+    font-size: 1.5vw;
+    font-family: sans-serif;
+}
+
+body .modalproductoventana .botonagregar {
+    position: absolute;
+    top: 39.8vw;
+    width: 12vw;
+    right: 4vw;
+    font-size: 1.3vw;
+    text-align: center;
+    font-family: sans-serif;
+    border-radius: .2vw;
+    font-weight: 700;
+    background: red;
+    color: white;
+    border: .1vw solid black;
+}
+
+body .modalproductoventana .botonagregar:hover {
+    background: rgba(255, 0, 0, 0.781);
+}
+
+body .modalproductoventana .botonagregar:active {
+    -webkit-text-stroke: .09vw aquamarine;
+    box-shadow: inset .1vw .1vw .05vw black, inset -.1vw -.1vw .05vw black;
+
+}
 
 
 /**************** MODAL VENTANA****************************/
 
 
 
-body .modal-container{
+body .modal-container {
     width: 50vw;
     margin: auto;
     max-height: 40vw;
@@ -1585,62 +1853,65 @@ body .modal-container{
     opacity: 0;
 }
 
-body .modal-container::-webkit-scrollbar{
+body .modal-container::-webkit-scrollbar {
     display: none;
 }
 
 
-body .modal-container:hover{
+body .modal-container:hover {
     background: rgb(188, 229, 243);
 }
 
-body .modal-container .modal-header{
+body .modal-container .modal-header {
     color: black;
     padding-bottom: 5vw;
     padding-top: 3vw;
 }
 
-body .modal-container .modal-header h1{
+body .modal-container .modal-header h1 {
     font-size: 3.5vw;
     font-weight: 800;
     font-style: italic;
 }
 
-body .modal-container  .modal-header-button{
+body .modal-container .modal-header-button {
     color: red;
     position: fixed;
     left: 90%;
     cursor: pointer;
 }
 
-body .modal-container  .modal-header-button:hover{
+body .modal-container .modal-header-button:hover {
     -webkit-text-stroke: .3vw rgb(255, 37, 37);
     font-size: 3vw;
     left: 90.5%;
 }
 
-body .modal-container .modaltitulotabla{
+body .modal-container .modaltitulotabla {
     display: inline-flex;
     width: 100%;
     height: 4vw;
 }
 
-body .modal-container .modaltitulotabla h2{
+body .modal-container .modaltitulotabla h2 {
     font-size: 1.5vw;
     font-weight: 700;
     font-family: gill sans;
 }
-body .modal-container .modaltitulotabla #descprod{
+
+body .modal-container .modaltitulotabla #descprod {
     margin-left: 27.5%;
 }
-body .modal-container .modaltitulotabla #cantprod{
+
+body .modal-container .modaltitulotabla #cantprod {
     margin-left: 16%;
 }
-body .modal-container .modaltitulotabla #totalprod{
+
+body .modal-container .modaltitulotabla #totalprod {
     margin-left: 9%;
 }
 
-body .modal-container .modaltitulotabla .textocarritolimpio{
+body .modal-container .modaltitulotabla .textocarritolimpio {
     font-weight: 900;
     margin: auto;
     font-size: 2vw;
@@ -1648,7 +1919,7 @@ body .modal-container .modaltitulotabla .textocarritolimpio{
 }
 
 
-body .modal-container .modal-content{
+body .modal-container .modal-content {
     width: 90%;
     margin: auto;
     display: inline;
@@ -1658,35 +1929,50 @@ body .modal-container .modal-content{
 
 
 }
-body .modal-container .modal-content img{
+
+body .modal-container .modal-content img {
     width: 20%;
     height: 20%;
     box-shadow: .5vw .5vw .5vw yellow;
     border-radius: 5%;
 }
-body .modal-container .modal-content h3{
+
+body .modal-container .modal-content h3 {
     display: inline-flex;
     position: absolute;
     left: 25%;
     top: -1.33vw;
-    font-size: 1.5vw
-
+    font-size: 1.5vw;
+    max-height: 2.5vw;
+    max-width: 13vw;
+    overflow: scroll;
 }
 
-body .modal-container .modal-content #descripcion{
+body .modal-container .modal-content h3::-webkit-scrollbar {
+    display: none;
+}
+
+body .modal-container .modal-content #descripcion {
     display: inline-flex;
     position: absolute;
     left: 25%;
-    width: 20%;
     text-align: justify;
-    top: .9vw;
+    top: 1.1vw;
     line-height: 1.5vw;
     overflow: hidden;
     max-height: 4.5vw;
     font-size: 1vw;
+    max-height: 5vw;
+    max-width: 13vw;
+    overflow: scroll;
 }
 
-body .modal-container .modal-content #costound{
+body .modal-container .modal-content #descripcion::-webkit-scrollbar {
+    display: none;
+}
+
+
+body .modal-container .modal-content #costound {
     display: inline-flex;
     position: absolute;
     left: 82.5%;
@@ -1697,7 +1983,7 @@ body .modal-container .modal-content #costound{
     font-weight: 900;
 }
 
-body .modal-container .modal-content #cantund{
+body .modal-container .modal-content #cantund {
     display: inline-flex;
     position: absolute;
     left: 62.5%;
@@ -1708,24 +1994,24 @@ body .modal-container .modal-content #cantund{
     font-weight: 900;
 }
 
-body .modal-container .modal-content .bttnplus{
+body .modal-container .modal-content .bttnplus {
     position: absolute;
     left: 66.5%;
     width: 1.6vw;
     height: 1.5vw;
     font-size: .7vw;
-    top: 1.3vw ;
+    top: 1.3vw;
     padding: 0;
     border: none;
     overflow: hidden;
     background: red;
     border-top-right-radius: .5vw;
     border-bottom-right-radius: .5vw;
-    
+
 
 }
 
-body .modal-container .modal-content .bttnplus p{
+body .modal-container .modal-content .bttnplus p {
     position: absolute;
     top: -.33vw;
     left: .35vw;
@@ -1738,19 +2024,19 @@ body .modal-container .modal-content .bttnplus p{
 
 
 
-body .modal-container .modal-content button p{
+body .modal-container .modal-content button p {
     border-radius: 1vw;
 }
 
 
 
-body .modal-container .modal-content .bttnmin{
+body .modal-container .modal-content .bttnmin {
     position: absolute;
     left: 59%;
     width: 1.5vw;
     height: 1.5vw;
     font-size: .7vw;
-    top: 1.3vw ;
+    top: 1.3vw;
     padding: 0;
     border: none;
     overflow: hidden;
@@ -1759,7 +2045,7 @@ body .modal-container .modal-content .bttnmin{
     border-bottom-left-radius: .5vw;
 }
 
-body .modal-container .modal-content .bttnmin p{
+body .modal-container .modal-content .bttnmin p {
     position: absolute;
     top: -1.05vw;
     left: .35vw;
@@ -1773,18 +2059,19 @@ body .modal-container .modal-content .bttnmin p{
 
 
 
-body .modal-container .modal-content .deleteprod{
+body .modal-container .modal-content .deleteprod {
     position: absolute;
     right: 0;
-    top: 1vw;
-    font-size: 1vw;
+    top: .5vw;
+    font-size: 1.8vw;
+    font-weight: 600;
     cursor: pointer;
 }
 
 
 
 
-body .modal-container .total-content{
+body .modal-container .total-content {
     margin-top: 3vw;
     font-size: 1.5vw;
     font-weight: 900;
@@ -1794,7 +2081,7 @@ body .modal-container .total-content{
 }
 
 
-body .modal-container .fondodivcarrito{
+body .modal-container .fondodivcarrito {
     width: 100%;
     margin: auto;
     text-align: center;
@@ -1802,7 +2089,7 @@ body .modal-container .fondodivcarrito{
     margin-bottom: 1vw;
 }
 
-body .modal-container .fondodivcarrito .botoninscribir{
+body .modal-container .fondodivcarrito .botoninscribir {
     width: 30%;
     border-radius: .5vw;
     background: red;
@@ -1817,7 +2104,7 @@ body .modal-container .fondodivcarrito .botoninscribir{
 
 }
 
-body .modal-container .fondodivcarrito .botonlimpiar{
+body .modal-container .fondodivcarrito .botonlimpiar {
     width: 30%;
     border-radius: .5vw;
     background: red;
@@ -1829,23 +2116,23 @@ body .modal-container .fondodivcarrito .botonlimpiar{
     margin-right: 2vw;
     border: none;
     color: WHITE;
-    
+
 }
 
-body .modal-container .fondodivcarrito .botonlimpiar:hover{
+body .modal-container .fondodivcarrito .botonlimpiar:hover {
     border: .1vw solid black;
-    border-style:inset;
-    
+    border-style: inset;
+
 }
 
-body .modal-container .fondodivcarrito .botoninscribir:hover{
+body .modal-container .fondodivcarrito .botoninscribir:hover {
     border: .1vw solid black;
-    border-style:inset;
-    
+    border-style: inset;
+
 }
 
 
-body .cesta-carrito{
+body .cesta-carrito {
     position: absolute;
     background: -webkit-linear-gradient(left, white, rgb(92, 92, 92));
     right: 5vw;
@@ -1861,4 +2148,3 @@ body .cesta-carrito{
     transition: all 1s;
     opacity: 0;
 }
-

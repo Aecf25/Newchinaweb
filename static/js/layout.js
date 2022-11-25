@@ -8,7 +8,8 @@ comida3.forEach((product) => {
     content.innerHTML = `
         <img src="${product.img}">
         <h3>${product.nombre}</h3>
-        <p>${product.desc}</p>
+        <p class="descproducto">${product.desc}</p>
+        <p class="precioproducto">Ref ${product.precio}</p>
     `;
     listadeCompras3.append(content);
 
@@ -16,12 +17,11 @@ comida3.forEach((product) => {
     let comprar = document.createElement("button");
     comprar.className = "button"
     comprar.innerHTML = `
-    Ref ${product.precio}
+        Agregar al Pedido
         <span></span>
         <span></span>
         <span></span>
         <span></span>
-        <span><p>Agregar a la Cesta</p></span>
     `;
     content.append(comprar);
     comprar.addEventListener("click", () =>{
